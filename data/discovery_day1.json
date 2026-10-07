@@ -1,0 +1,1228 @@
+{
+ "source": "discovery",
+ "collected_at": "2026-10-02T06:00:00Z",
+ "devices": [
+  {
+   "name": "nyc1-acc-01",
+   "site": "BR-NYC1",
+   "role": "access-switch",
+   "manufacturer": "Cisco",
+   "model": "C9300-48P",
+   "platform": "ios-xe-17.12",
+   "serial": "FOCCAQB124Z",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "GigabitEthernet0/0",
+     "type": "1000base-t",
+     "ip": "10.30.0.12/24"
+    },
+    {
+     "name": "TenGigabitEthernet1/1/1",
+     "type": "10gbase-x-sfpp"
+    }
+   ]
+  },
+  {
+   "name": "nyc1-acc-02",
+   "site": "BR-NYC1",
+   "role": "access-switch",
+   "manufacturer": "Cisco",
+   "model": "C9300-48P",
+   "platform": "ios-xe-17.12",
+   "serial": "FOC9F1M8M1D",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "GigabitEthernet0/0",
+     "type": "1000base-t",
+     "ip": "10.30.0.13/24"
+    },
+    {
+     "name": "TenGigabitEthernet1/1/1",
+     "type": "10gbase-x-sfpp"
+    }
+   ]
+  },
+  {
+   "name": "nyc1-acc-03",
+   "site": "BR-NYC1",
+   "role": "access-switch",
+   "manufacturer": "Cisco",
+   "model": "C9300-48P",
+   "platform": "ios-xe-17.12",
+   "serial": "FOC1DUFURQD",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "GigabitEthernet0/0",
+     "type": "1000base-t",
+     "ip": "10.30.0.14/24"
+    },
+    {
+     "name": "TenGigabitEthernet1/1/1",
+     "type": "10gbase-x-sfpp"
+    }
+   ]
+  },
+  {
+   "name": "nyc1-acc-04",
+   "site": "BR-NYC1",
+   "role": "access-switch",
+   "manufacturer": "Cisco",
+   "model": "C9300-48P",
+   "platform": "ios-xe-17.12",
+   "serial": "FOC7RPFA34Y",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "GigabitEthernet0/0",
+     "type": "1000base-t",
+     "ip": "10.30.0.15/24"
+    },
+    {
+     "name": "TenGigabitEthernet1/1/1",
+     "type": "10gbase-x-sfpp"
+    }
+   ]
+  },
+  {
+   "name": "nyc1-acc-05",
+   "site": "BR-NYC1",
+   "role": "access-switch",
+   "manufacturer": "Cisco",
+   "model": "C9300-48P",
+   "platform": "ios-xe-17.12",
+   "serial": "FOCJGNSAE39",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "GigabitEthernet0/0",
+     "type": "1000base-t",
+     "ip": "10.30.0.16/24"
+    },
+    {
+     "name": "TenGigabitEthernet1/1/1",
+     "type": "10gbase-x-sfpp"
+    }
+   ]
+  },
+  {
+   "name": "nyc1-acc-07",
+   "site": "BR-NYC1",
+   "role": "access-switch",
+   "manufacturer": "Cisco",
+   "model": "C9300-48P",
+   "platform": "ios-xe-17.12",
+   "serial": "FOCC9APTNPB",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "GigabitEthernet0/0",
+     "type": "1000base-t",
+     "ip": "10.30.0.40/24"
+    },
+    {
+     "name": "TenGigabitEthernet1/1/1",
+     "type": "10gbase-x-sfpp"
+    }
+   ]
+  },
+  {
+   "name": "nyc1-bfw-01",
+   "site": "BR-NYC1",
+   "role": "firewall",
+   "manufacturer": "Fortinet",
+   "model": "FG-100F",
+   "platform": "fortios-7.4",
+   "serial": "FG10LVEB5Y0",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "mgmt",
+     "type": "1000base-t",
+     "ip": "10.30.0.11/24"
+    },
+    {
+     "name": "port1",
+     "type": "1000base-t"
+    },
+    {
+     "name": "port2",
+     "type": "1000base-t"
+    }
+   ]
+  },
+  {
+   "name": "nyc1-rtr-01",
+   "site": "BR-NYC1",
+   "role": "edge-router",
+   "manufacturer": "Cisco",
+   "model": "C8300-1N1S-4T2X",
+   "platform": "ios-xe-17.12",
+   "serial": "FDOD8J31MGY",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "GigabitEthernet0",
+     "type": "1000base-t",
+     "ip": "10.30.0.10/24"
+    },
+    {
+     "name": "TenGigabitEthernet0/1/0",
+     "type": "10gbase-x-sfpp"
+    }
+   ]
+  },
+  {
+   "name": "nyc1-wlc-01",
+   "site": "BR-NYC1",
+   "role": "wireless-controller",
+   "manufacturer": "Cisco",
+   "model": "C9800-L-C-K9",
+   "platform": "ios-xe-17.12",
+   "serial": "FCW7QQBCXPM",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "GigabitEthernet0",
+     "type": "1000base-t",
+     "ip": "10.30.1.10/24"
+    },
+    {
+     "name": "TenGigabitEthernet0/1/0",
+     "type": "10gbase-x-sfpp"
+    }
+   ]
+  },
+  {
+   "name": "nyc1-wlc-02",
+   "site": "BR-NYC1",
+   "role": "wireless-controller",
+   "manufacturer": "Cisco",
+   "model": "C9800-L-C-K9",
+   "platform": "ios-xe-17.12",
+   "serial": "FCW2E3H1Y93",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "GigabitEthernet0",
+     "type": "1000base-t",
+     "ip": "10.30.0.19/24"
+    },
+    {
+     "name": "TenGigabitEthernet0/1/0",
+     "type": "10gbase-x-sfpp"
+    }
+   ]
+  },
+  {
+   "name": "atl1-core-01",
+   "site": "DC-ATL1",
+   "role": "core-router",
+   "manufacturer": "Juniper",
+   "model": "MX204",
+   "platform": "junos-23.4",
+   "serial": "JNFJB7VUM8",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "fxp0",
+     "type": "1000base-t",
+     "ip": "10.20.0.10/24"
+    },
+    {
+     "name": "et-0/0/0",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "et-0/0/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "lo0",
+     "type": "virtual",
+     "ip": "10.255.2.1/32"
+    }
+   ]
+  },
+  {
+   "name": "atl1-core-02",
+   "site": "DC-ATL1",
+   "role": "core-router",
+   "manufacturer": "Juniper",
+   "model": "MX204",
+   "platform": "junos-23.4",
+   "serial": "JNR6LBUAVN",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "fxp0",
+     "type": "1000base-t",
+     "ip": "10.20.0.11/24"
+    },
+    {
+     "name": "et-0/0/0",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "et-0/0/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "lo0",
+     "type": "virtual",
+     "ip": "10.255.2.2/32"
+    }
+   ]
+  },
+  {
+   "name": "atl1-fw-01",
+   "site": "DC-ATL1",
+   "role": "firewall",
+   "manufacturer": "Palo Alto Networks",
+   "model": "PA-3220",
+   "platform": "panos-11.1",
+   "serial": "PAH0WD2AUT",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "mgmt",
+     "type": "1000base-t",
+     "ip": "10.20.0.26/24"
+    },
+    {
+     "name": "ethernet1/1",
+     "type": "10gbase-x-sfpp"
+    },
+    {
+     "name": "ethernet1/2",
+     "type": "10gbase-x-sfpp"
+    }
+   ]
+  },
+  {
+   "name": "atl1-fw-02",
+   "site": "DC-ATL1",
+   "role": "firewall",
+   "manufacturer": "Palo Alto Networks",
+   "model": "PA-3220",
+   "platform": "panos-11.1",
+   "serial": "PAZHERW0PW",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "mgmt",
+     "type": "1000base-t",
+     "ip": "10.20.1.10/24"
+    },
+    {
+     "name": "ethernet1/1",
+     "type": "10gbase-x-sfpp"
+    },
+    {
+     "name": "ethernet1/2",
+     "type": "10gbase-x-sfpp"
+    }
+   ]
+  },
+  {
+   "name": "atl1-lab-sw01",
+   "site": "DC-ATL1",
+   "role": "access-switch",
+   "manufacturer": "Cisco",
+   "model": "C9300-48P",
+   "platform": "ios-xe-17.12",
+   "serial": "FOCMRVHR70H",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "GigabitEthernet0/0",
+     "type": "1000base-t",
+     "ip": "10.20.0.40/24"
+    },
+    {
+     "name": "TenGigabitEthernet1/1/1",
+     "type": "10gbase-x-sfpp"
+    }
+   ]
+  },
+  {
+   "name": "atl1-leaf-01",
+   "site": "DC-ATL1",
+   "role": "leaf",
+   "manufacturer": "Arista",
+   "model": "DCS-7050SX3-48YC8",
+   "platform": "eos-4.31",
+   "serial": "JPEMXQVHGPV",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "Management1",
+     "type": "1000base-t",
+     "ip": "10.20.0.14/24"
+    },
+    {
+     "name": "Ethernet1",
+     "type": "25gbase-x-sfp28"
+    },
+    {
+     "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    }
+   ]
+  },
+  {
+   "name": "atl1-leaf-02",
+   "site": "DC-ATL1",
+   "role": "leaf",
+   "manufacturer": "Arista",
+   "model": "DCS-7050SX3-48YC8",
+   "platform": "eos-4.31",
+   "serial": "JPE1TNB42RT",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "Management1",
+     "type": "1000base-t",
+     "ip": "10.20.0.15/24"
+    },
+    {
+     "name": "Ethernet1",
+     "type": "25gbase-x-sfp28"
+    },
+    {
+     "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    }
+   ]
+  },
+  {
+   "name": "atl1-leaf-03",
+   "site": "DC-ATL1",
+   "role": "leaf",
+   "manufacturer": "Arista",
+   "model": "DCS-7050SX3-48YC8",
+   "platform": "eos-4.31",
+   "serial": "JPEBHD5NSDS",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "Management1",
+     "type": "1000base-t",
+     "ip": "10.20.0.16/24"
+    },
+    {
+     "name": "Ethernet1",
+     "type": "25gbase-x-sfp28"
+    },
+    {
+     "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    }
+   ]
+  },
+  {
+   "name": "atl1-leaf-04",
+   "site": "DC-ATL1",
+   "role": "leaf",
+   "manufacturer": "Arista",
+   "model": "DCS-7050SX3-48YC8",
+   "platform": "eos-4.31",
+   "serial": "JPE3N07M80E",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "Management1",
+     "type": "1000base-t",
+     "ip": "10.20.0.17/24"
+    },
+    {
+     "name": "Ethernet1",
+     "type": "25gbase-x-sfp28"
+    },
+    {
+     "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    }
+   ]
+  },
+  {
+   "name": "atl1-leaf-05",
+   "site": "DC-ATL1",
+   "role": "leaf",
+   "manufacturer": "Arista",
+   "model": "DCS-7050SX3-48YC8",
+   "platform": "eos-4.31",
+   "serial": "JPE263PS685",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "Management1",
+     "type": "1000base-t",
+     "ip": "10.20.0.18/24"
+    },
+    {
+     "name": "Ethernet1",
+     "type": "25gbase-x-sfp28"
+    },
+    {
+     "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    }
+   ]
+  },
+  {
+   "name": "atl1-leaf-06",
+   "site": "DC-ATL1",
+   "role": "leaf",
+   "manufacturer": "Arista",
+   "model": "DCS-7050SX3-48YC8",
+   "platform": "eos-4.31",
+   "serial": "JPE9M68476U",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "Management1",
+     "type": "1000base-t",
+     "ip": "10.20.0.19/24"
+    },
+    {
+     "name": "Ethernet1",
+     "type": "25gbase-x-sfp28"
+    },
+    {
+     "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    }
+   ]
+  },
+  {
+   "name": "atl1-leaf-08",
+   "site": "DC-ATL1",
+   "role": "leaf",
+   "manufacturer": "Arista",
+   "model": "DCS-7050SX3-48YC8",
+   "platform": "eos-4.31",
+   "serial": "JPE2KC62U1E",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "Management1",
+     "type": "1000base-t",
+     "ip": "10.20.0.21/24"
+    },
+    {
+     "name": "Ethernet1",
+     "type": "25gbase-x-sfp28"
+    },
+    {
+     "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    }
+   ]
+  },
+  {
+   "name": "atl1-leaf-09",
+   "site": "DC-ATL1",
+   "role": "leaf",
+   "manufacturer": "Arista",
+   "model": "DCS-7050SX3-48YC8",
+   "platform": "eos-4.31",
+   "serial": "JPEH80MSQG9",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "Management1",
+     "type": "1000base-t",
+     "ip": "10.20.0.22/24"
+    },
+    {
+     "name": "Ethernet1",
+     "type": "25gbase-x-sfp28"
+    },
+    {
+     "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    }
+   ]
+  },
+  {
+   "name": "atl1-leaf-10",
+   "site": "DC-ATL1",
+   "role": "leaf",
+   "manufacturer": "Arista",
+   "model": "DCS-7050SX3-48YC8",
+   "platform": "eos-4.31",
+   "serial": "JPETEHX1UB6",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "Management1",
+     "type": "1000base-t",
+     "ip": "10.20.0.23/24"
+    },
+    {
+     "name": "Ethernet1",
+     "type": "25gbase-x-sfp28"
+    },
+    {
+     "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    }
+   ]
+  },
+  {
+   "name": "atl1-leaf-11",
+   "site": "DC-ATL1",
+   "role": "leaf",
+   "manufacturer": "Arista",
+   "model": "DCS-7050SX3-48YC8",
+   "platform": "eos-4.31",
+   "serial": "JPEL8L11A1H",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "Management1",
+     "type": "1000base-t",
+     "ip": "10.20.0.24/24"
+    },
+    {
+     "name": "Ethernet1",
+     "type": "25gbase-x-sfp28"
+    },
+    {
+     "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    }
+   ]
+  },
+  {
+   "name": "atl1-leaf-12",
+   "site": "DC-ATL1",
+   "role": "leaf",
+   "manufacturer": "Arista",
+   "model": "DCS-7050SX3-48YC8",
+   "platform": "eos-4.31",
+   "serial": "JPE22PPZHTV",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "Management1",
+     "type": "1000base-t",
+     "ip": "10.20.0.25/24"
+    },
+    {
+     "name": "Ethernet1",
+     "type": "25gbase-x-sfp28"
+    },
+    {
+     "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    }
+   ]
+  },
+  {
+   "name": "atl1-oob-01",
+   "site": "DC-ATL1",
+   "role": "console-server",
+   "manufacturer": "Opengear",
+   "model": "CM8148",
+   "platform": "opengear-24.07",
+   "serial": "OGMBB4AZ97",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "eth0",
+     "type": "1000base-t",
+     "ip": "10.20.0.28/24"
+    },
+    {
+     "name": "eth1",
+     "type": "1000base-t"
+    }
+   ]
+  },
+  {
+   "name": "atl1-oob-02",
+   "site": "DC-ATL1",
+   "role": "console-server",
+   "manufacturer": "Opengear",
+   "model": "CM8148",
+   "platform": "opengear-24.07",
+   "serial": "OGTM0B1CA1",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "eth0",
+     "type": "1000base-t",
+     "ip": "10.20.0.29/24"
+    },
+    {
+     "name": "eth1",
+     "type": "1000base-t"
+    }
+   ]
+  },
+  {
+   "name": "atl1-spine-01",
+   "site": "DC-ATL1",
+   "role": "spine",
+   "manufacturer": "Arista",
+   "model": "DCS-7050CX3-32S",
+   "platform": "eos-4.33",
+   "serial": "JPEB0TPWL53",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "Management1",
+     "type": "1000base-t",
+     "ip": "10.20.0.12/24"
+    },
+    {
+     "name": "Ethernet1/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet2/1",
+     "type": "100gbase-x-qsfp28"
+    }
+   ]
+  },
+  {
+   "name": "atl1-spine-02",
+   "site": "DC-ATL1",
+   "role": "spine",
+   "manufacturer": "Arista",
+   "model": "DCS-7050CX3-32S",
+   "platform": "eos-4.31",
+   "serial": "JPEV7PGMDR7",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "Management1",
+     "type": "1000base-t",
+     "ip": "10.20.0.13/24"
+    },
+    {
+     "name": "Ethernet1/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet2/1",
+     "type": "100gbase-x-qsfp28"
+    }
+   ]
+  },
+  {
+   "name": "dal1-core-01",
+   "site": "DC-DAL1",
+   "role": "core-router",
+   "manufacturer": "Juniper",
+   "model": "MX204",
+   "platform": "junos-23.4",
+   "serial": "JNQYEUGTJ8",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "fxp0",
+     "type": "1000base-t",
+     "ip": "10.10.0.10/24"
+    },
+    {
+     "name": "et-0/0/0",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "et-0/0/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "lo0",
+     "type": "virtual",
+     "ip": "10.255.1.1/32"
+    },
+    {
+     "name": "et-0/0/2",
+     "type": "100gbase-x-qsfp28"
+    }
+   ]
+  },
+  {
+   "name": "dal1-core-02",
+   "site": "DC-DAL1",
+   "role": "core-router",
+   "manufacturer": "Juniper",
+   "model": "MX204",
+   "platform": "junos-23.4",
+   "serial": "JNGG6ANHLM",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "fxp0",
+     "type": "1000base-t",
+     "ip": "10.10.0.11/24"
+    },
+    {
+     "name": "et-0/0/0",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "et-0/0/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "lo0",
+     "type": "virtual",
+     "ip": "10.255.1.2/32"
+    }
+   ]
+  },
+  {
+   "name": "dal1-fw-01",
+   "site": "DC-DAL1",
+   "role": "firewall",
+   "manufacturer": "Palo Alto Networks",
+   "model": "PA-3220",
+   "platform": "panos-11.1",
+   "serial": "PA8KU2RUC5",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "mgmt",
+     "type": "1000base-t",
+     "ip": "10.10.0.26/24"
+    },
+    {
+     "name": "ethernet1/1",
+     "type": "10gbase-x-sfpp"
+    },
+    {
+     "name": "ethernet1/2",
+     "type": "10gbase-x-sfpp"
+    }
+   ]
+  },
+  {
+   "name": "dal1-fw-02",
+   "site": "DC-DAL1",
+   "role": "firewall",
+   "manufacturer": "Palo Alto Networks",
+   "model": "PA-3220",
+   "platform": "panos-11.1",
+   "serial": "PAEAPPT13S",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "mgmt",
+     "type": "1000base-t",
+     "ip": "10.10.0.27/24"
+    },
+    {
+     "name": "ethernet1/1",
+     "type": "10gbase-x-sfpp"
+    },
+    {
+     "name": "ethernet1/2",
+     "type": "10gbase-x-sfpp"
+    }
+   ]
+  },
+  {
+   "name": "dal1-leaf-01",
+   "site": "DC-DAL1",
+   "role": "leaf",
+   "manufacturer": "Arista",
+   "model": "DCS-7050SX3-48YC8",
+   "platform": "eos-4.31",
+   "serial": "JPEC8B5HUDW",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "Management1",
+     "type": "1000base-t",
+     "ip": "10.10.0.14/24"
+    },
+    {
+     "name": "Ethernet1",
+     "type": "25gbase-x-sfp28"
+    },
+    {
+     "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    }
+   ]
+  },
+  {
+   "name": "dal1-leaf-02",
+   "site": "DC-DAL1",
+   "role": "leaf",
+   "manufacturer": "Arista",
+   "model": "DCS-7050SX3-48YC8",
+   "platform": "eos-4.31",
+   "serial": "JPEDD5N8081",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "Management1",
+     "type": "1000base-t",
+     "ip": "10.10.0.15/24"
+    },
+    {
+     "name": "Ethernet1",
+     "type": "25gbase-x-sfp28"
+    },
+    {
+     "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    }
+   ]
+  },
+  {
+   "name": "dal1-leaf-03",
+   "site": "DC-DAL1",
+   "role": "leaf",
+   "manufacturer": "Arista",
+   "model": "DCS-7050SX3-48YC8",
+   "platform": "eos-4.31",
+   "serial": "JPEJQ0JF8ZC",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "Management1",
+     "type": "1000base-t",
+     "ip": "10.10.0.16/24"
+    },
+    {
+     "name": "Ethernet1",
+     "type": "25gbase-x-sfp28"
+    },
+    {
+     "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    }
+   ]
+  },
+  {
+   "name": "dal1-leaf-04",
+   "site": "DC-DAL1",
+   "role": "leaf",
+   "manufacturer": "Arista",
+   "model": "DCS-7050SX3-48YC8",
+   "platform": "eos-4.31",
+   "serial": "JPEFJPFWD10",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "Management1",
+     "type": "1000base-t",
+     "ip": "10.10.0.17/24"
+    },
+    {
+     "name": "Ethernet1",
+     "type": "25gbase-x-sfp28"
+    },
+    {
+     "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    }
+   ]
+  },
+  {
+   "name": "dal1-leaf-05",
+   "site": "DC-DAL1",
+   "role": "leaf",
+   "manufacturer": "Arista",
+   "model": "DCS-7050SX3-48YC8",
+   "platform": "eos-4.31",
+   "serial": "JPEQ56NU12E",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "Management1",
+     "type": "1000base-t",
+     "ip": "10.10.0.18/24"
+    },
+    {
+     "name": "Ethernet1",
+     "type": "25gbase-x-sfp28"
+    },
+    {
+     "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    }
+   ]
+  },
+  {
+   "name": "dal1-leaf-06",
+   "site": "DC-DAL1",
+   "role": "leaf",
+   "manufacturer": "Arista",
+   "model": "DCS-7050SX3-48YC8",
+   "platform": "eos-4.31",
+   "serial": "JPE3DAJXF7D",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "Management1",
+     "type": "1000base-t",
+     "ip": "10.10.0.19/24"
+    },
+    {
+     "name": "Ethernet1",
+     "type": "25gbase-x-sfp28"
+    },
+    {
+     "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    }
+   ]
+  },
+  {
+   "name": "dal1-leaf-07",
+   "site": "DC-DAL1",
+   "role": "leaf",
+   "manufacturer": "Arista",
+   "model": "DCS-7050SX3-48YC8",
+   "platform": "eos-4.31",
+   "serial": "JPEGNTZA8SU",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "Management1",
+     "type": "1000base-t",
+     "ip": "10.10.0.20/24"
+    },
+    {
+     "name": "Ethernet1",
+     "type": "25gbase-x-sfp28"
+    },
+    {
+     "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    }
+   ]
+  },
+  {
+   "name": "dal1-leaf-08",
+   "site": "DC-DAL1",
+   "role": "leaf",
+   "manufacturer": "Arista",
+   "model": "DCS-7050SX3-48YC8",
+   "platform": "eos-4.31",
+   "serial": "JPEDKHDJM8W",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "Management1",
+     "type": "1000base-t",
+     "ip": "10.10.0.21/24"
+    },
+    {
+     "name": "Ethernet1",
+     "type": "25gbase-x-sfp28"
+    },
+    {
+     "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    }
+   ]
+  },
+  {
+   "name": "dal1-leaf-09",
+   "site": "DC-DAL1",
+   "role": "leaf",
+   "manufacturer": "Arista",
+   "model": "DCS-7050SX3-48YC8",
+   "platform": "eos-4.31",
+   "serial": "JPE21Z98BUL",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "Management1",
+     "type": "1000base-t",
+     "ip": "10.10.0.22/24"
+    },
+    {
+     "name": "Ethernet1",
+     "type": "25gbase-x-sfp28"
+    },
+    {
+     "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    }
+   ]
+  },
+  {
+   "name": "dal1-leaf-10",
+   "site": "DC-DAL1",
+   "role": "leaf",
+   "manufacturer": "Arista",
+   "model": "DCS-7050SX3-48YC8",
+   "platform": "eos-4.31",
+   "serial": "JPE2ACLTREH",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "Management1",
+     "type": "1000base-t",
+     "ip": "10.10.0.23/24"
+    },
+    {
+     "name": "Ethernet1",
+     "type": "25gbase-x-sfp28"
+    },
+    {
+     "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    }
+   ]
+  },
+  {
+   "name": "dal1-leaf-11",
+   "site": "DC-DAL1",
+   "role": "leaf",
+   "manufacturer": "Arista",
+   "model": "DCS-7050SX3-48YC8",
+   "platform": "eos-4.31",
+   "serial": "JPE1KU41MPD",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "Management1",
+     "type": "1000base-t",
+     "ip": "10.10.0.24/24"
+    },
+    {
+     "name": "Ethernet1",
+     "type": "25gbase-x-sfp28"
+    },
+    {
+     "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    }
+   ]
+  },
+  {
+   "name": "dal1-leaf-12",
+   "site": "DC-DAL1",
+   "role": "leaf",
+   "manufacturer": "Arista",
+   "model": "DCS-7050SX3-48YC8",
+   "platform": "eos-4.31",
+   "serial": "JPEDYGS15M8",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "Management1",
+     "type": "1000base-t",
+     "ip": "10.10.0.25/24"
+    },
+    {
+     "name": "Ethernet1",
+     "type": "25gbase-x-sfp28"
+    },
+    {
+     "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    }
+   ]
+  },
+  {
+   "name": "dal1-leaf-13",
+   "site": "DC-DAL1",
+   "role": "leaf",
+   "manufacturer": "Arista",
+   "model": "DCS-7050SX3-48YC8",
+   "platform": "eos-4.31",
+   "serial": "JPEPU8YCHBA",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "Management1",
+     "type": "1000base-t",
+     "ip": "10.10.0.40/24"
+    },
+    {
+     "name": "Ethernet1",
+     "type": "25gbase-x-sfp28"
+    },
+    {
+     "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    }
+   ]
+  },
+  {
+   "name": "dal1-oob-01",
+   "site": "DC-DAL1",
+   "role": "console-server",
+   "manufacturer": "Opengear",
+   "model": "CM8148",
+   "platform": "opengear-24.07",
+   "serial": "OGY60ZJS84",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "eth0",
+     "type": "1000base-t",
+     "ip": "10.10.0.28/24"
+    },
+    {
+     "name": "eth1",
+     "type": "1000base-t"
+    }
+   ]
+  },
+  {
+   "name": "dal1-spine-01",
+   "site": "DC-DAL1",
+   "role": "spine",
+   "manufacturer": "Arista",
+   "model": "DCS-7050CX3-32S",
+   "platform": "eos-4.33",
+   "serial": "JPEHWNZ6RAX",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "Management1",
+     "type": "1000base-t",
+     "ip": "10.10.0.12/24"
+    },
+    {
+     "name": "Ethernet1/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet2/1",
+     "type": "100gbase-x-qsfp28"
+    }
+   ]
+  },
+  {
+   "name": "dal1-spine-02",
+   "site": "DC-DAL1",
+   "role": "spine",
+   "manufacturer": "Arista",
+   "model": "DCS-7050CX3-32S",
+   "platform": "eos-4.33",
+   "serial": "JPESDPDDFCB",
+   "status": "active",
+   "interfaces": [
+    {
+     "name": "Management1",
+     "type": "1000base-t",
+     "ip": "10.10.0.13/24"
+    },
+    {
+     "name": "Ethernet1/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet2/1",
+     "type": "100gbase-x-qsfp28"
+    }
+   ]
+  }
+ ]
+}

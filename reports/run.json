@@ -1,0 +1,125 @@
+{
+  "result": "PASS",
+  "NetBox": "4.7.2",
+  "Diode plugin": "1.18.0",
+  "recon": "0.1.0",
+  "phases": [
+    {
+      "name": "1-baseline",
+      "source": "cmdb",
+      "passed": true,
+      "applied": true,
+      "converged": true,
+      "netbox_writes": 278,
+      "retries": 0,
+      "duration_s": 17.0,
+      "plan": {
+        "device": {
+          "create": 50,
+          "update": 0,
+          "unchanged": 0,
+          "stale": 0
+        },
+        "interface": {
+          "create": 141,
+          "update": 0,
+          "unchanged": 0,
+          "stale": 0
+        },
+        "ip_address": {
+          "create": 54,
+          "update": 0,
+          "unchanged": 0,
+          "stale": 0
+        }
+      },
+      "ingest": {
+        "requests": 50,
+        "entities": 245,
+        "errors": []
+      },
+      "checks": {
+        "total": 246,
+        "failed": 0
+      }
+    },
+    {
+      "name": "2-rerun",
+      "source": "cmdb",
+      "passed": true,
+      "applied": true,
+      "converged": true,
+      "netbox_writes": 0,
+      "retries": 0,
+      "duration_s": 1.3,
+      "plan": {
+        "device": {
+          "create": 0,
+          "update": 0,
+          "unchanged": 50,
+          "stale": 0
+        },
+        "interface": {
+          "create": 0,
+          "update": 0,
+          "unchanged": 141,
+          "stale": 0
+        },
+        "ip_address": {
+          "create": 0,
+          "update": 0,
+          "unchanged": 54,
+          "stale": 0
+        }
+      },
+      "ingest": {
+        "requests": 50,
+        "entities": 245,
+        "errors": []
+      },
+      "checks": {
+        "total": 1,
+        "failed": 0
+      }
+    },
+    {
+      "name": "3-discovery",
+      "source": "discovery",
+      "passed": true,
+      "applied": true,
+      "converged": true,
+      "netbox_writes": 118,
+      "retries": 0,
+      "duration_s": 23.6,
+      "plan": {
+        "device": {
+          "create": 3,
+          "update": 7,
+          "unchanged": 40,
+          "stale": 3
+        },
+        "interface": {
+          "create": 8,
+          "update": 0,
+          "unchanged": 134,
+          "stale": 0
+        },
+        "ip_address": {
+          "create": 5,
+          "update": 0,
+          "unchanged": 49,
+          "stale": 2
+        }
+      },
+      "ingest": {
+        "requests": 51,
+        "entities": 249,
+        "errors": []
+      },
+      "checks": {
+        "total": 29,
+        "failed": 0
+      }
+    }
+  ]
+}
