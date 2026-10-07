@@ -1,247 +1,433 @@
 object_type,key,action,field,expected,actual,result
-device,BR-NYC1/nyc1-acc-01,create,,C9300-48P,present,PASS
-device,BR-NYC1/nyc1-acc-02,create,,C9300-48P,present,PASS
-device,BR-NYC1/nyc1-acc-03,create,,C9300-48P,present,PASS
-device,BR-NYC1/nyc1-acc-04,create,,C9300-48P,present,PASS
-device,BR-NYC1/nyc1-acc-05,create,,C9300-48P,present,PASS
-device,BR-NYC1/nyc1-acc-06,create,,C9300-48P,present,PASS
-device,BR-NYC1/nyc1-bfw-01,create,,FG-100F,present,PASS
-device,BR-NYC1/nyc1-rtr-01,create,,C8300-1N1S-4T2X,present,PASS
-device,BR-NYC1/nyc1-wlc-01,create,,C9800-L-C-K9,present,PASS
-device,BR-NYC1/nyc1-wlc-02,create,,C9800-L-C-K9,present,PASS
-device,DC-ATL1/atl1-core-01,create,,MX204,present,PASS
-device,DC-ATL1/atl1-core-02,create,,MX204,present,PASS
-device,DC-ATL1/atl1-fw-01,create,,PA-3220,present,PASS
-device,DC-ATL1/atl1-fw-02,create,,PA-3220,present,PASS
-device,DC-ATL1/atl1-leaf-01,create,,DCS-7050SX3-48YC8,present,PASS
-device,DC-ATL1/atl1-leaf-02,create,,DCS-7050SX3-48YC8,present,PASS
-device,DC-ATL1/atl1-leaf-03,create,,DCS-7050SX3-48YC8,present,PASS
-device,DC-ATL1/atl1-leaf-04,create,,DCS-7050SX3-48YC8,present,PASS
-device,DC-ATL1/atl1-leaf-05,create,,DCS-7050SX3-48YC8,present,PASS
-device,DC-ATL1/atl1-leaf-06,create,,DCS-7050SX3-48YC8,present,PASS
-device,DC-ATL1/atl1-leaf-07,create,,DCS-7050SX3-48YC8,present,PASS
-device,DC-ATL1/atl1-leaf-08,create,,DCS-7050SX3-48YC8,present,PASS
-device,DC-ATL1/atl1-leaf-09,create,,DCS-7050SX3-48YC8,present,PASS
-device,DC-ATL1/atl1-leaf-10,create,,DCS-7050SX3-48YC8,present,PASS
-device,DC-ATL1/atl1-leaf-11,create,,DCS-7050SX3-48YC8,present,PASS
-device,DC-ATL1/atl1-leaf-12,create,,DCS-7050SX3-48YC8,present,PASS
-device,DC-ATL1/atl1-oob-01,create,,CM8148,present,PASS
-device,DC-ATL1/atl1-oob-02,create,,CM8148,present,PASS
-device,DC-ATL1/atl1-spine-01,create,,DCS-7050CX3-32S,present,PASS
-device,DC-ATL1/atl1-spine-02,create,,DCS-7050CX3-32S,present,PASS
-device,DC-DAL1/dal1-core-01,create,,MX204,present,PASS
-device,DC-DAL1/dal1-core-02,create,,MX204,present,PASS
-device,DC-DAL1/dal1-fw-01,create,,PA-3220,present,PASS
-device,DC-DAL1/dal1-fw-02,create,,PA-3220,present,PASS
-device,DC-DAL1/dal1-leaf-01,create,,DCS-7050SX3-48YC8,present,PASS
-device,DC-DAL1/dal1-leaf-02,create,,DCS-7050SX3-48YC8,present,PASS
-device,DC-DAL1/dal1-leaf-03,create,,DCS-7050SX3-48YC8,present,PASS
-device,DC-DAL1/dal1-leaf-04,create,,DCS-7050SX3-48YC8,present,PASS
-device,DC-DAL1/dal1-leaf-05,create,,DCS-7050SX3-48YC8,present,PASS
-device,DC-DAL1/dal1-leaf-06,create,,DCS-7050SX3-48YC8,present,PASS
-device,DC-DAL1/dal1-leaf-07,create,,DCS-7050SX3-48YC8,present,PASS
-device,DC-DAL1/dal1-leaf-08,create,,DCS-7050SX3-48YC8,present,PASS
-device,DC-DAL1/dal1-leaf-09,create,,DCS-7050SX3-48YC8,present,PASS
-device,DC-DAL1/dal1-leaf-10,create,,DCS-7050SX3-48YC8,present,PASS
-device,DC-DAL1/dal1-leaf-11,create,,DCS-7050SX3-48YC8,present,PASS
-device,DC-DAL1/dal1-leaf-12,create,,DCS-7050SX3-48YC8,present,PASS
-device,DC-DAL1/dal1-oob-01,create,,CM8148,present,PASS
-device,DC-DAL1/dal1-oob-02,create,,CM8148,present,PASS
-device,DC-DAL1/dal1-spine-01,create,,DCS-7050CX3-32S,present,PASS
-device,DC-DAL1/dal1-spine-02,create,,DCS-7050CX3-32S,present,PASS
-interface,BR-NYC1/nyc1-acc-01/GigabitEthernet0/0,create,,1000base-t,present,PASS
-interface,BR-NYC1/nyc1-acc-01/TenGigabitEthernet1/1/1,create,,10gbase-x-sfpp,present,PASS
-interface,BR-NYC1/nyc1-acc-02/GigabitEthernet0/0,create,,1000base-t,present,PASS
-interface,BR-NYC1/nyc1-acc-02/TenGigabitEthernet1/1/1,create,,10gbase-x-sfpp,present,PASS
-interface,BR-NYC1/nyc1-acc-03/GigabitEthernet0/0,create,,1000base-t,present,PASS
-interface,BR-NYC1/nyc1-acc-03/TenGigabitEthernet1/1/1,create,,10gbase-x-sfpp,present,PASS
-interface,BR-NYC1/nyc1-acc-04/GigabitEthernet0/0,create,,1000base-t,present,PASS
-interface,BR-NYC1/nyc1-acc-04/TenGigabitEthernet1/1/1,create,,10gbase-x-sfpp,present,PASS
-interface,BR-NYC1/nyc1-acc-05/GigabitEthernet0/0,create,,1000base-t,present,PASS
-interface,BR-NYC1/nyc1-acc-05/TenGigabitEthernet1/1/1,create,,10gbase-x-sfpp,present,PASS
-interface,BR-NYC1/nyc1-acc-06/GigabitEthernet0/0,create,,1000base-t,present,PASS
-interface,BR-NYC1/nyc1-acc-06/TenGigabitEthernet1/1/1,create,,10gbase-x-sfpp,present,PASS
-interface,BR-NYC1/nyc1-bfw-01/mgmt,create,,1000base-t,present,PASS
-interface,BR-NYC1/nyc1-bfw-01/port1,create,,1000base-t,present,PASS
-interface,BR-NYC1/nyc1-bfw-01/port2,create,,1000base-t,present,PASS
-interface,BR-NYC1/nyc1-rtr-01/GigabitEthernet0,create,,1000base-t,present,PASS
-interface,BR-NYC1/nyc1-rtr-01/TenGigabitEthernet0/1/0,create,,10gbase-x-sfpp,present,PASS
-interface,BR-NYC1/nyc1-wlc-01/GigabitEthernet0,create,,1000base-t,present,PASS
-interface,BR-NYC1/nyc1-wlc-01/TenGigabitEthernet0/1/0,create,,10gbase-x-sfpp,present,PASS
-interface,BR-NYC1/nyc1-wlc-02/GigabitEthernet0,create,,1000base-t,present,PASS
-interface,BR-NYC1/nyc1-wlc-02/TenGigabitEthernet0/1/0,create,,10gbase-x-sfpp,present,PASS
-interface,DC-ATL1/atl1-core-01/et-0/0/0,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-ATL1/atl1-core-01/et-0/0/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-ATL1/atl1-core-01/fxp0,create,,1000base-t,present,PASS
-interface,DC-ATL1/atl1-core-01/lo0,create,,virtual,present,PASS
-interface,DC-ATL1/atl1-core-02/et-0/0/0,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-ATL1/atl1-core-02/et-0/0/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-ATL1/atl1-core-02/fxp0,create,,1000base-t,present,PASS
-interface,DC-ATL1/atl1-core-02/lo0,create,,virtual,present,PASS
-interface,DC-ATL1/atl1-fw-01/ethernet1/1,create,,10gbase-x-sfpp,present,PASS
-interface,DC-ATL1/atl1-fw-01/ethernet1/2,create,,10gbase-x-sfpp,present,PASS
-interface,DC-ATL1/atl1-fw-01/mgmt,create,,1000base-t,present,PASS
-interface,DC-ATL1/atl1-fw-02/ethernet1/1,create,,10gbase-x-sfpp,present,PASS
-interface,DC-ATL1/atl1-fw-02/ethernet1/2,create,,10gbase-x-sfpp,present,PASS
-interface,DC-ATL1/atl1-fw-02/mgmt,create,,1000base-t,present,PASS
-interface,DC-ATL1/atl1-leaf-01/Ethernet1,create,,25gbase-x-sfp28,present,PASS
-interface,DC-ATL1/atl1-leaf-01/Ethernet49/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-ATL1/atl1-leaf-01/Management1,create,,1000base-t,present,PASS
-interface,DC-ATL1/atl1-leaf-02/Ethernet1,create,,25gbase-x-sfp28,present,PASS
-interface,DC-ATL1/atl1-leaf-02/Ethernet49/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-ATL1/atl1-leaf-02/Management1,create,,1000base-t,present,PASS
-interface,DC-ATL1/atl1-leaf-03/Ethernet1,create,,25gbase-x-sfp28,present,PASS
-interface,DC-ATL1/atl1-leaf-03/Ethernet49/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-ATL1/atl1-leaf-03/Management1,create,,1000base-t,present,PASS
-interface,DC-ATL1/atl1-leaf-04/Ethernet1,create,,25gbase-x-sfp28,present,PASS
-interface,DC-ATL1/atl1-leaf-04/Ethernet49/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-ATL1/atl1-leaf-04/Management1,create,,1000base-t,present,PASS
-interface,DC-ATL1/atl1-leaf-05/Ethernet1,create,,25gbase-x-sfp28,present,PASS
-interface,DC-ATL1/atl1-leaf-05/Ethernet49/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-ATL1/atl1-leaf-05/Management1,create,,1000base-t,present,PASS
-interface,DC-ATL1/atl1-leaf-06/Ethernet1,create,,25gbase-x-sfp28,present,PASS
-interface,DC-ATL1/atl1-leaf-06/Ethernet49/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-ATL1/atl1-leaf-06/Management1,create,,1000base-t,present,PASS
-interface,DC-ATL1/atl1-leaf-07/Ethernet1,create,,25gbase-x-sfp28,present,PASS
-interface,DC-ATL1/atl1-leaf-07/Ethernet49/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-ATL1/atl1-leaf-07/Management1,create,,1000base-t,present,PASS
-interface,DC-ATL1/atl1-leaf-08/Ethernet1,create,,25gbase-x-sfp28,present,PASS
-interface,DC-ATL1/atl1-leaf-08/Ethernet49/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-ATL1/atl1-leaf-08/Management1,create,,1000base-t,present,PASS
-interface,DC-ATL1/atl1-leaf-09/Ethernet1,create,,25gbase-x-sfp28,present,PASS
-interface,DC-ATL1/atl1-leaf-09/Ethernet49/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-ATL1/atl1-leaf-09/Management1,create,,1000base-t,present,PASS
-interface,DC-ATL1/atl1-leaf-10/Ethernet1,create,,25gbase-x-sfp28,present,PASS
-interface,DC-ATL1/atl1-leaf-10/Ethernet49/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-ATL1/atl1-leaf-10/Management1,create,,1000base-t,present,PASS
-interface,DC-ATL1/atl1-leaf-11/Ethernet1,create,,25gbase-x-sfp28,present,PASS
-interface,DC-ATL1/atl1-leaf-11/Ethernet49/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-ATL1/atl1-leaf-11/Management1,create,,1000base-t,present,PASS
-interface,DC-ATL1/atl1-leaf-12/Ethernet1,create,,25gbase-x-sfp28,present,PASS
-interface,DC-ATL1/atl1-leaf-12/Ethernet49/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-ATL1/atl1-leaf-12/Management1,create,,1000base-t,present,PASS
-interface,DC-ATL1/atl1-oob-01/eth0,create,,1000base-t,present,PASS
-interface,DC-ATL1/atl1-oob-01/eth1,create,,1000base-t,present,PASS
-interface,DC-ATL1/atl1-oob-02/eth0,create,,1000base-t,present,PASS
-interface,DC-ATL1/atl1-oob-02/eth1,create,,1000base-t,present,PASS
-interface,DC-ATL1/atl1-spine-01/Ethernet1/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-ATL1/atl1-spine-01/Ethernet2/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-ATL1/atl1-spine-01/Management1,create,,1000base-t,present,PASS
-interface,DC-ATL1/atl1-spine-02/Ethernet1/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-ATL1/atl1-spine-02/Ethernet2/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-ATL1/atl1-spine-02/Management1,create,,1000base-t,present,PASS
-interface,DC-DAL1/dal1-core-01/et-0/0/0,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-DAL1/dal1-core-01/et-0/0/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-DAL1/dal1-core-01/fxp0,create,,1000base-t,present,PASS
-interface,DC-DAL1/dal1-core-01/lo0,create,,virtual,present,PASS
-interface,DC-DAL1/dal1-core-02/et-0/0/0,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-DAL1/dal1-core-02/et-0/0/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-DAL1/dal1-core-02/fxp0,create,,1000base-t,present,PASS
-interface,DC-DAL1/dal1-core-02/lo0,create,,virtual,present,PASS
-interface,DC-DAL1/dal1-fw-01/ethernet1/1,create,,10gbase-x-sfpp,present,PASS
-interface,DC-DAL1/dal1-fw-01/ethernet1/2,create,,10gbase-x-sfpp,present,PASS
-interface,DC-DAL1/dal1-fw-01/mgmt,create,,1000base-t,present,PASS
-interface,DC-DAL1/dal1-fw-02/ethernet1/1,create,,10gbase-x-sfpp,present,PASS
-interface,DC-DAL1/dal1-fw-02/ethernet1/2,create,,10gbase-x-sfpp,present,PASS
-interface,DC-DAL1/dal1-fw-02/mgmt,create,,1000base-t,present,PASS
-interface,DC-DAL1/dal1-leaf-01/Ethernet1,create,,25gbase-x-sfp28,present,PASS
-interface,DC-DAL1/dal1-leaf-01/Ethernet49/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-DAL1/dal1-leaf-01/Management1,create,,1000base-t,present,PASS
-interface,DC-DAL1/dal1-leaf-02/Ethernet1,create,,25gbase-x-sfp28,present,PASS
-interface,DC-DAL1/dal1-leaf-02/Ethernet49/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-DAL1/dal1-leaf-02/Management1,create,,1000base-t,present,PASS
-interface,DC-DAL1/dal1-leaf-03/Ethernet1,create,,25gbase-x-sfp28,present,PASS
-interface,DC-DAL1/dal1-leaf-03/Ethernet49/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-DAL1/dal1-leaf-03/Management1,create,,1000base-t,present,PASS
-interface,DC-DAL1/dal1-leaf-04/Ethernet1,create,,25gbase-x-sfp28,present,PASS
-interface,DC-DAL1/dal1-leaf-04/Ethernet49/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-DAL1/dal1-leaf-04/Management1,create,,1000base-t,present,PASS
-interface,DC-DAL1/dal1-leaf-05/Ethernet1,create,,25gbase-x-sfp28,present,PASS
-interface,DC-DAL1/dal1-leaf-05/Ethernet49/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-DAL1/dal1-leaf-05/Management1,create,,1000base-t,present,PASS
-interface,DC-DAL1/dal1-leaf-06/Ethernet1,create,,25gbase-x-sfp28,present,PASS
-interface,DC-DAL1/dal1-leaf-06/Ethernet49/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-DAL1/dal1-leaf-06/Management1,create,,1000base-t,present,PASS
-interface,DC-DAL1/dal1-leaf-07/Ethernet1,create,,25gbase-x-sfp28,present,PASS
-interface,DC-DAL1/dal1-leaf-07/Ethernet49/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-DAL1/dal1-leaf-07/Management1,create,,1000base-t,present,PASS
-interface,DC-DAL1/dal1-leaf-08/Ethernet1,create,,25gbase-x-sfp28,present,PASS
-interface,DC-DAL1/dal1-leaf-08/Ethernet49/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-DAL1/dal1-leaf-08/Management1,create,,1000base-t,present,PASS
-interface,DC-DAL1/dal1-leaf-09/Ethernet1,create,,25gbase-x-sfp28,present,PASS
-interface,DC-DAL1/dal1-leaf-09/Ethernet49/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-DAL1/dal1-leaf-09/Management1,create,,1000base-t,present,PASS
-interface,DC-DAL1/dal1-leaf-10/Ethernet1,create,,25gbase-x-sfp28,present,PASS
-interface,DC-DAL1/dal1-leaf-10/Ethernet49/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-DAL1/dal1-leaf-10/Management1,create,,1000base-t,present,PASS
-interface,DC-DAL1/dal1-leaf-11/Ethernet1,create,,25gbase-x-sfp28,present,PASS
-interface,DC-DAL1/dal1-leaf-11/Ethernet49/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-DAL1/dal1-leaf-11/Management1,create,,1000base-t,present,PASS
-interface,DC-DAL1/dal1-leaf-12/Ethernet1,create,,25gbase-x-sfp28,present,PASS
-interface,DC-DAL1/dal1-leaf-12/Ethernet49/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-DAL1/dal1-leaf-12/Management1,create,,1000base-t,present,PASS
-interface,DC-DAL1/dal1-oob-01/eth0,create,,1000base-t,present,PASS
-interface,DC-DAL1/dal1-oob-01/eth1,create,,1000base-t,present,PASS
-interface,DC-DAL1/dal1-oob-02/eth0,create,,1000base-t,present,PASS
-interface,DC-DAL1/dal1-oob-02/eth1,create,,1000base-t,present,PASS
-interface,DC-DAL1/dal1-spine-01/Ethernet1/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-DAL1/dal1-spine-01/Ethernet2/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-DAL1/dal1-spine-01/Management1,create,,1000base-t,present,PASS
-interface,DC-DAL1/dal1-spine-02/Ethernet1/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-DAL1/dal1-spine-02/Ethernet2/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-DAL1/dal1-spine-02/Management1,create,,1000base-t,present,PASS
-ip_address,10.10.0.10/24,create,assigned_to,DC-DAL1/dal1-core-01/fxp0,DC-DAL1/dal1-core-01/fxp0,PASS
-ip_address,10.10.0.11/24,create,assigned_to,DC-DAL1/dal1-core-02/fxp0,DC-DAL1/dal1-core-02/fxp0,PASS
-ip_address,10.10.0.12/24,create,assigned_to,DC-DAL1/dal1-spine-01/Management1,DC-DAL1/dal1-spine-01/Management1,PASS
-ip_address,10.10.0.13/24,create,assigned_to,DC-DAL1/dal1-spine-02/Management1,DC-DAL1/dal1-spine-02/Management1,PASS
-ip_address,10.10.0.14/24,create,assigned_to,DC-DAL1/dal1-leaf-01/Management1,DC-DAL1/dal1-leaf-01/Management1,PASS
-ip_address,10.10.0.15/24,create,assigned_to,DC-DAL1/dal1-leaf-02/Management1,DC-DAL1/dal1-leaf-02/Management1,PASS
-ip_address,10.10.0.16/24,create,assigned_to,DC-DAL1/dal1-leaf-03/Management1,DC-DAL1/dal1-leaf-03/Management1,PASS
-ip_address,10.10.0.17/24,create,assigned_to,DC-DAL1/dal1-leaf-04/Management1,DC-DAL1/dal1-leaf-04/Management1,PASS
-ip_address,10.10.0.18/24,create,assigned_to,DC-DAL1/dal1-leaf-05/Management1,DC-DAL1/dal1-leaf-05/Management1,PASS
-ip_address,10.10.0.19/24,create,assigned_to,DC-DAL1/dal1-leaf-06/Management1,DC-DAL1/dal1-leaf-06/Management1,PASS
-ip_address,10.10.0.20/24,create,assigned_to,DC-DAL1/dal1-leaf-07/Management1,DC-DAL1/dal1-leaf-07/Management1,PASS
-ip_address,10.10.0.21/24,create,assigned_to,DC-DAL1/dal1-leaf-08/Management1,DC-DAL1/dal1-leaf-08/Management1,PASS
-ip_address,10.10.0.22/24,create,assigned_to,DC-DAL1/dal1-leaf-09/Management1,DC-DAL1/dal1-leaf-09/Management1,PASS
-ip_address,10.10.0.23/24,create,assigned_to,DC-DAL1/dal1-leaf-10/Management1,DC-DAL1/dal1-leaf-10/Management1,PASS
-ip_address,10.10.0.24/24,create,assigned_to,DC-DAL1/dal1-leaf-11/Management1,DC-DAL1/dal1-leaf-11/Management1,PASS
-ip_address,10.10.0.25/24,create,assigned_to,DC-DAL1/dal1-leaf-12/Management1,DC-DAL1/dal1-leaf-12/Management1,PASS
-ip_address,10.10.0.26/24,create,assigned_to,DC-DAL1/dal1-fw-01/mgmt,DC-DAL1/dal1-fw-01/mgmt,PASS
-ip_address,10.10.0.27/24,create,assigned_to,DC-DAL1/dal1-fw-02/mgmt,DC-DAL1/dal1-fw-02/mgmt,PASS
-ip_address,10.10.0.28/24,create,assigned_to,DC-DAL1/dal1-oob-01/eth0,DC-DAL1/dal1-oob-01/eth0,PASS
-ip_address,10.10.0.29/24,create,assigned_to,DC-DAL1/dal1-oob-02/eth0,DC-DAL1/dal1-oob-02/eth0,PASS
-ip_address,10.20.0.10/24,create,assigned_to,DC-ATL1/atl1-core-01/fxp0,DC-ATL1/atl1-core-01/fxp0,PASS
-ip_address,10.20.0.11/24,create,assigned_to,DC-ATL1/atl1-core-02/fxp0,DC-ATL1/atl1-core-02/fxp0,PASS
-ip_address,10.20.0.12/24,create,assigned_to,DC-ATL1/atl1-spine-01/Management1,DC-ATL1/atl1-spine-01/Management1,PASS
-ip_address,10.20.0.13/24,create,assigned_to,DC-ATL1/atl1-spine-02/Management1,DC-ATL1/atl1-spine-02/Management1,PASS
-ip_address,10.20.0.14/24,create,assigned_to,DC-ATL1/atl1-leaf-01/Management1,DC-ATL1/atl1-leaf-01/Management1,PASS
-ip_address,10.20.0.15/24,create,assigned_to,DC-ATL1/atl1-leaf-02/Management1,DC-ATL1/atl1-leaf-02/Management1,PASS
-ip_address,10.20.0.16/24,create,assigned_to,DC-ATL1/atl1-leaf-03/Management1,DC-ATL1/atl1-leaf-03/Management1,PASS
-ip_address,10.20.0.17/24,create,assigned_to,DC-ATL1/atl1-leaf-04/Management1,DC-ATL1/atl1-leaf-04/Management1,PASS
-ip_address,10.20.0.18/24,create,assigned_to,DC-ATL1/atl1-leaf-05/Management1,DC-ATL1/atl1-leaf-05/Management1,PASS
-ip_address,10.20.0.19/24,create,assigned_to,DC-ATL1/atl1-leaf-06/Management1,DC-ATL1/atl1-leaf-06/Management1,PASS
-ip_address,10.20.0.20/24,create,assigned_to,DC-ATL1/atl1-leaf-07/Management1,DC-ATL1/atl1-leaf-07/Management1,PASS
-ip_address,10.20.0.21/24,create,assigned_to,DC-ATL1/atl1-leaf-08/Management1,DC-ATL1/atl1-leaf-08/Management1,PASS
-ip_address,10.20.0.22/24,create,assigned_to,DC-ATL1/atl1-leaf-09/Management1,DC-ATL1/atl1-leaf-09/Management1,PASS
-ip_address,10.20.0.23/24,create,assigned_to,DC-ATL1/atl1-leaf-10/Management1,DC-ATL1/atl1-leaf-10/Management1,PASS
-ip_address,10.20.0.24/24,create,assigned_to,DC-ATL1/atl1-leaf-11/Management1,DC-ATL1/atl1-leaf-11/Management1,PASS
-ip_address,10.20.0.25/24,create,assigned_to,DC-ATL1/atl1-leaf-12/Management1,DC-ATL1/atl1-leaf-12/Management1,PASS
-ip_address,10.20.0.26/24,create,assigned_to,DC-ATL1/atl1-fw-01/mgmt,DC-ATL1/atl1-fw-01/mgmt,PASS
-ip_address,10.20.0.27/24,create,assigned_to,DC-ATL1/atl1-fw-02/mgmt,DC-ATL1/atl1-fw-02/mgmt,PASS
-ip_address,10.20.0.28/24,create,assigned_to,DC-ATL1/atl1-oob-01/eth0,DC-ATL1/atl1-oob-01/eth0,PASS
-ip_address,10.20.0.29/24,create,assigned_to,DC-ATL1/atl1-oob-02/eth0,DC-ATL1/atl1-oob-02/eth0,PASS
-ip_address,10.255.1.1/32,create,assigned_to,DC-DAL1/dal1-core-01/lo0,DC-DAL1/dal1-core-01/lo0,PASS
-ip_address,10.255.1.2/32,create,assigned_to,DC-DAL1/dal1-core-02/lo0,DC-DAL1/dal1-core-02/lo0,PASS
-ip_address,10.255.2.1/32,create,assigned_to,DC-ATL1/atl1-core-01/lo0,DC-ATL1/atl1-core-01/lo0,PASS
-ip_address,10.255.2.2/32,create,assigned_to,DC-ATL1/atl1-core-02/lo0,DC-ATL1/atl1-core-02/lo0,PASS
-ip_address,10.30.0.10/24,create,assigned_to,BR-NYC1/nyc1-rtr-01/GigabitEthernet0,BR-NYC1/nyc1-rtr-01/GigabitEthernet0,PASS
-ip_address,10.30.0.11/24,create,assigned_to,BR-NYC1/nyc1-bfw-01/mgmt,BR-NYC1/nyc1-bfw-01/mgmt,PASS
-ip_address,10.30.0.12/24,create,assigned_to,BR-NYC1/nyc1-acc-01/GigabitEthernet0/0,BR-NYC1/nyc1-acc-01/GigabitEthernet0/0,PASS
-ip_address,10.30.0.13/24,create,assigned_to,BR-NYC1/nyc1-acc-02/GigabitEthernet0/0,BR-NYC1/nyc1-acc-02/GigabitEthernet0/0,PASS
-ip_address,10.30.0.14/24,create,assigned_to,BR-NYC1/nyc1-acc-03/GigabitEthernet0/0,BR-NYC1/nyc1-acc-03/GigabitEthernet0/0,PASS
-ip_address,10.30.0.15/24,create,assigned_to,BR-NYC1/nyc1-acc-04/GigabitEthernet0/0,BR-NYC1/nyc1-acc-04/GigabitEthernet0/0,PASS
-ip_address,10.30.0.16/24,create,assigned_to,BR-NYC1/nyc1-acc-05/GigabitEthernet0/0,BR-NYC1/nyc1-acc-05/GigabitEthernet0/0,PASS
-ip_address,10.30.0.17/24,create,assigned_to,BR-NYC1/nyc1-acc-06/GigabitEthernet0/0,BR-NYC1/nyc1-acc-06/GigabitEthernet0/0,PASS
-ip_address,10.30.0.18/24,create,assigned_to,BR-NYC1/nyc1-wlc-01/GigabitEthernet0,BR-NYC1/nyc1-wlc-01/GigabitEthernet0,PASS
-ip_address,10.30.0.19/24,create,assigned_to,BR-NYC1/nyc1-wlc-02/GigabitEthernet0,BR-NYC1/nyc1-wlc-02/GigabitEthernet0,PASS
-all,*,sweep,,0 objects drifting,0 objects drifting,PASS
+device,BR-NYC1/nyc1-acc-01,create,,present,present,PASS
+device,BR-NYC1/nyc1-acc-02,create,,present,present,PASS
+device,BR-NYC1/nyc1-acc-03,create,,present,present,PASS
+device,BR-NYC1/nyc1-acc-04,create,,present,present,PASS
+device,BR-NYC1/nyc1-acc-05,create,,present,present,PASS
+device,BR-NYC1/nyc1-acc-06,create,,present,present,PASS
+device,BR-NYC1/nyc1-bfw-01,create,,present,present,PASS
+device,BR-NYC1/nyc1-rtr-01,create,,present,present,PASS
+device,BR-NYC1/nyc1-wlc-01,create,,present,present,PASS
+device,BR-NYC1/nyc1-wlc-02,create,,present,present,PASS
+device,DC-ATL1/atl1-core-01,create,,present,present,PASS
+device,DC-ATL1/atl1-core-02,create,,present,present,PASS
+device,DC-ATL1/atl1-fw-01,create,,present,present,PASS
+device,DC-ATL1/atl1-fw-02,create,,present,present,PASS
+device,DC-ATL1/atl1-leaf-01,create,,present,present,PASS
+device,DC-ATL1/atl1-leaf-02,create,,present,present,PASS
+device,DC-ATL1/atl1-leaf-03,create,,present,present,PASS
+device,DC-ATL1/atl1-leaf-04,create,,present,present,PASS
+device,DC-ATL1/atl1-leaf-05,create,,present,present,PASS
+device,DC-ATL1/atl1-leaf-06,create,,present,present,PASS
+device,DC-ATL1/atl1-leaf-07,create,,present,present,PASS
+device,DC-ATL1/atl1-leaf-08,create,,present,present,PASS
+device,DC-ATL1/atl1-leaf-09,create,,present,present,PASS
+device,DC-ATL1/atl1-leaf-10,create,,present,present,PASS
+device,DC-ATL1/atl1-leaf-11,create,,present,present,PASS
+device,DC-ATL1/atl1-leaf-12,create,,present,present,PASS
+device,DC-ATL1/atl1-oob-01,create,,present,present,PASS
+device,DC-ATL1/atl1-oob-02,create,,present,present,PASS
+device,DC-ATL1/atl1-spine-01,create,,present,present,PASS
+device,DC-ATL1/atl1-spine-02,create,,present,present,PASS
+device,DC-DAL1/dal1-core-01,create,,present,present,PASS
+device,DC-DAL1/dal1-core-02,create,,present,present,PASS
+device,DC-DAL1/dal1-fw-01,create,,present,present,PASS
+device,DC-DAL1/dal1-fw-02,create,,present,present,PASS
+device,DC-DAL1/dal1-leaf-01,create,,present,present,PASS
+device,DC-DAL1/dal1-leaf-02,create,,present,present,PASS
+device,DC-DAL1/dal1-leaf-03,create,,present,present,PASS
+device,DC-DAL1/dal1-leaf-04,create,,present,present,PASS
+device,DC-DAL1/dal1-leaf-05,create,,present,present,PASS
+device,DC-DAL1/dal1-leaf-06,create,,present,present,PASS
+device,DC-DAL1/dal1-leaf-07,create,,present,present,PASS
+device,DC-DAL1/dal1-leaf-08,create,,present,present,PASS
+device,DC-DAL1/dal1-leaf-09,create,,present,present,PASS
+device,DC-DAL1/dal1-leaf-10,create,,present,present,PASS
+device,DC-DAL1/dal1-leaf-11,create,,present,present,PASS
+device,DC-DAL1/dal1-leaf-12,create,,present,present,PASS
+device,DC-DAL1/dal1-oob-01,create,,present,present,PASS
+device,DC-DAL1/dal1-oob-02,create,,present,present,PASS
+device,DC-DAL1/dal1-spine-01,create,,present,present,PASS
+device,DC-DAL1/dal1-spine-02,create,,present,present,PASS
+interface,BR-NYC1/nyc1-acc-01/GigabitEthernet0/0,create,,present,present,PASS
+interface,BR-NYC1/nyc1-acc-01/GigabitEthernet1/0/48,create,,present,present,PASS
+interface,BR-NYC1/nyc1-acc-01/TenGigabitEthernet1/1/1,create,,present,present,PASS
+interface,BR-NYC1/nyc1-acc-02/GigabitEthernet0/0,create,,present,present,PASS
+interface,BR-NYC1/nyc1-acc-02/GigabitEthernet1/0/48,create,,present,present,PASS
+interface,BR-NYC1/nyc1-acc-02/TenGigabitEthernet1/1/1,create,,present,present,PASS
+interface,BR-NYC1/nyc1-acc-03/GigabitEthernet0/0,create,,present,present,PASS
+interface,BR-NYC1/nyc1-acc-03/GigabitEthernet1/0/48,create,,present,present,PASS
+interface,BR-NYC1/nyc1-acc-03/TenGigabitEthernet1/1/1,create,,present,present,PASS
+interface,BR-NYC1/nyc1-acc-04/GigabitEthernet0/0,create,,present,present,PASS
+interface,BR-NYC1/nyc1-acc-04/GigabitEthernet1/0/48,create,,present,present,PASS
+interface,BR-NYC1/nyc1-acc-04/TenGigabitEthernet1/1/1,create,,present,present,PASS
+interface,BR-NYC1/nyc1-acc-05/GigabitEthernet0/0,create,,present,present,PASS
+interface,BR-NYC1/nyc1-acc-05/GigabitEthernet1/0/48,create,,present,present,PASS
+interface,BR-NYC1/nyc1-acc-05/TenGigabitEthernet1/1/1,create,,present,present,PASS
+interface,BR-NYC1/nyc1-acc-06/GigabitEthernet0/0,create,,present,present,PASS
+interface,BR-NYC1/nyc1-acc-06/GigabitEthernet1/0/48,create,,present,present,PASS
+interface,BR-NYC1/nyc1-acc-06/TenGigabitEthernet1/1/1,create,,present,present,PASS
+interface,BR-NYC1/nyc1-bfw-01/mgmt,create,,present,present,PASS
+interface,BR-NYC1/nyc1-bfw-01/port1,create,,present,present,PASS
+interface,BR-NYC1/nyc1-bfw-01/port2,create,,present,present,PASS
+interface,BR-NYC1/nyc1-bfw-01/port3,create,,present,present,PASS
+interface,BR-NYC1/nyc1-bfw-01/port4,create,,present,present,PASS
+interface,BR-NYC1/nyc1-bfw-01/port5,create,,present,present,PASS
+interface,BR-NYC1/nyc1-bfw-01/port6,create,,present,present,PASS
+interface,BR-NYC1/nyc1-bfw-01/port7,create,,present,present,PASS
+interface,BR-NYC1/nyc1-bfw-01/port8,create,,present,present,PASS
+interface,BR-NYC1/nyc1-rtr-01/GigabitEthernet0,create,,present,present,PASS
+interface,BR-NYC1/nyc1-rtr-01/TenGigabitEthernet0/1/0,create,,present,present,PASS
+interface,BR-NYC1/nyc1-wlc-01/GigabitEthernet0,create,,present,present,PASS
+interface,BR-NYC1/nyc1-wlc-01/TenGigabitEthernet0/1/0,create,,present,present,PASS
+interface,BR-NYC1/nyc1-wlc-02/GigabitEthernet0,create,,present,present,PASS
+interface,BR-NYC1/nyc1-wlc-02/TenGigabitEthernet0/1/0,create,,present,present,PASS
+interface,DC-ATL1/atl1-core-01/et-0/0/0,create,,present,present,PASS
+interface,DC-ATL1/atl1-core-01/et-0/0/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-core-01/fxp0,create,,present,present,PASS
+interface,DC-ATL1/atl1-core-01/lo0,create,,present,present,PASS
+interface,DC-ATL1/atl1-core-02/et-0/0/0,create,,present,present,PASS
+interface,DC-ATL1/atl1-core-02/et-0/0/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-core-02/fxp0,create,,present,present,PASS
+interface,DC-ATL1/atl1-core-02/lo0,create,,present,present,PASS
+interface,DC-ATL1/atl1-fw-01/ethernet1/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-fw-01/ethernet1/2,create,,present,present,PASS
+interface,DC-ATL1/atl1-fw-01/mgmt,create,,present,present,PASS
+interface,DC-ATL1/atl1-fw-02/ethernet1/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-fw-02/ethernet1/2,create,,present,present,PASS
+interface,DC-ATL1/atl1-fw-02/mgmt,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-01/Ethernet1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-01/Ethernet49/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-01/Ethernet50/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-01/Management1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-02/Ethernet1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-02/Ethernet49/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-02/Ethernet50/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-02/Management1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-03/Ethernet1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-03/Ethernet49/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-03/Ethernet50/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-03/Management1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-04/Ethernet1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-04/Ethernet49/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-04/Ethernet50/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-04/Management1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-05/Ethernet1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-05/Ethernet49/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-05/Ethernet50/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-05/Management1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-06/Ethernet1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-06/Ethernet49/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-06/Ethernet50/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-06/Management1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-07/Ethernet1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-07/Ethernet49/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-07/Ethernet50/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-07/Management1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-08/Ethernet1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-08/Ethernet49/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-08/Ethernet50/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-08/Management1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-09/Ethernet1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-09/Ethernet49/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-09/Ethernet50/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-09/Management1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-10/Ethernet1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-10/Ethernet49/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-10/Ethernet50/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-10/Management1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-11/Ethernet1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-11/Ethernet49/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-11/Ethernet50/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-11/Management1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-12/Ethernet1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-12/Ethernet49/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-12/Ethernet50/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-leaf-12/Management1,create,,present,present,PASS
+interface,DC-ATL1/atl1-oob-01/eth0,create,,present,present,PASS
+interface,DC-ATL1/atl1-oob-01/eth1,create,,present,present,PASS
+interface,DC-ATL1/atl1-oob-02/eth0,create,,present,present,PASS
+interface,DC-ATL1/atl1-oob-02/eth1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-01/Ethernet1/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-01/Ethernet10/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-01/Ethernet11/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-01/Ethernet12/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-01/Ethernet13/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-01/Ethernet14/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-01/Ethernet15/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-01/Ethernet16/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-01/Ethernet2/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-01/Ethernet3/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-01/Ethernet4/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-01/Ethernet5/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-01/Ethernet6/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-01/Ethernet7/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-01/Ethernet8/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-01/Ethernet9/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-01/Management1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-02/Ethernet1/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-02/Ethernet10/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-02/Ethernet11/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-02/Ethernet12/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-02/Ethernet13/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-02/Ethernet14/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-02/Ethernet15/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-02/Ethernet16/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-02/Ethernet2/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-02/Ethernet3/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-02/Ethernet4/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-02/Ethernet5/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-02/Ethernet6/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-02/Ethernet7/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-02/Ethernet8/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-02/Ethernet9/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-spine-02/Management1,create,,present,present,PASS
+interface,DC-DAL1/dal1-core-01/et-0/0/0,create,,present,present,PASS
+interface,DC-DAL1/dal1-core-01/et-0/0/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-core-01/fxp0,create,,present,present,PASS
+interface,DC-DAL1/dal1-core-01/lo0,create,,present,present,PASS
+interface,DC-DAL1/dal1-core-02/et-0/0/0,create,,present,present,PASS
+interface,DC-DAL1/dal1-core-02/et-0/0/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-core-02/fxp0,create,,present,present,PASS
+interface,DC-DAL1/dal1-core-02/lo0,create,,present,present,PASS
+interface,DC-DAL1/dal1-fw-01/ethernet1/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-fw-01/ethernet1/2,create,,present,present,PASS
+interface,DC-DAL1/dal1-fw-01/mgmt,create,,present,present,PASS
+interface,DC-DAL1/dal1-fw-02/ethernet1/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-fw-02/ethernet1/2,create,,present,present,PASS
+interface,DC-DAL1/dal1-fw-02/mgmt,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-01/Ethernet1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-01/Ethernet49/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-01/Ethernet50/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-01/Management1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-02/Ethernet1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-02/Ethernet49/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-02/Ethernet50/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-02/Management1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-03/Ethernet1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-03/Ethernet49/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-03/Ethernet50/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-03/Management1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-04/Ethernet1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-04/Ethernet49/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-04/Ethernet50/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-04/Management1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-05/Ethernet1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-05/Ethernet49/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-05/Ethernet50/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-05/Management1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-06/Ethernet1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-06/Ethernet49/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-06/Ethernet50/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-06/Management1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-07/Ethernet1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-07/Ethernet49/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-07/Ethernet50/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-07/Management1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-08/Ethernet1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-08/Ethernet49/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-08/Ethernet50/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-08/Management1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-09/Ethernet1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-09/Ethernet49/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-09/Ethernet50/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-09/Management1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-10/Ethernet1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-10/Ethernet49/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-10/Ethernet50/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-10/Management1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-11/Ethernet1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-11/Ethernet49/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-11/Ethernet50/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-11/Management1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-12/Ethernet1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-12/Ethernet49/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-12/Ethernet50/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-12/Management1,create,,present,present,PASS
+interface,DC-DAL1/dal1-oob-01/eth0,create,,present,present,PASS
+interface,DC-DAL1/dal1-oob-01/eth1,create,,present,present,PASS
+interface,DC-DAL1/dal1-oob-02/eth0,create,,present,present,PASS
+interface,DC-DAL1/dal1-oob-02/eth1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-01/Ethernet1/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-01/Ethernet10/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-01/Ethernet11/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-01/Ethernet12/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-01/Ethernet13/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-01/Ethernet14/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-01/Ethernet15/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-01/Ethernet16/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-01/Ethernet2/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-01/Ethernet3/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-01/Ethernet4/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-01/Ethernet5/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-01/Ethernet6/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-01/Ethernet7/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-01/Ethernet8/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-01/Ethernet9/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-01/Management1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-02/Ethernet1/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-02/Ethernet10/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-02/Ethernet11/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-02/Ethernet12/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-02/Ethernet13/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-02/Ethernet14/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-02/Ethernet15/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-02/Ethernet16/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-02/Ethernet2/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-02/Ethernet3/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-02/Ethernet4/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-02/Ethernet5/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-02/Ethernet6/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-02/Ethernet7/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-02/Ethernet8/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-02/Ethernet9/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-spine-02/Management1,create,,present,present,PASS
+ip_address,10.10.0.10/24,create,,present,present,PASS
+ip_address,10.10.0.11/24,create,,present,present,PASS
+ip_address,10.10.0.12/24,create,,present,present,PASS
+ip_address,10.10.0.13/24,create,,present,present,PASS
+ip_address,10.10.0.14/24,create,,present,present,PASS
+ip_address,10.10.0.15/24,create,,present,present,PASS
+ip_address,10.10.0.16/24,create,,present,present,PASS
+ip_address,10.10.0.17/24,create,,present,present,PASS
+ip_address,10.10.0.18/24,create,,present,present,PASS
+ip_address,10.10.0.19/24,create,,present,present,PASS
+ip_address,10.10.0.20/24,create,,present,present,PASS
+ip_address,10.10.0.21/24,create,,present,present,PASS
+ip_address,10.10.0.22/24,create,,present,present,PASS
+ip_address,10.10.0.23/24,create,,present,present,PASS
+ip_address,10.10.0.24/24,create,,present,present,PASS
+ip_address,10.10.0.25/24,create,,present,present,PASS
+ip_address,10.10.0.26/24,create,,present,present,PASS
+ip_address,10.10.0.27/24,create,,present,present,PASS
+ip_address,10.10.0.28/24,create,,present,present,PASS
+ip_address,10.10.0.29/24,create,,present,present,PASS
+ip_address,10.20.0.10/24,create,,present,present,PASS
+ip_address,10.20.0.11/24,create,,present,present,PASS
+ip_address,10.20.0.12/24,create,,present,present,PASS
+ip_address,10.20.0.13/24,create,,present,present,PASS
+ip_address,10.20.0.14/24,create,,present,present,PASS
+ip_address,10.20.0.15/24,create,,present,present,PASS
+ip_address,10.20.0.16/24,create,,present,present,PASS
+ip_address,10.20.0.17/24,create,,present,present,PASS
+ip_address,10.20.0.18/24,create,,present,present,PASS
+ip_address,10.20.0.19/24,create,,present,present,PASS
+ip_address,10.20.0.20/24,create,,present,present,PASS
+ip_address,10.20.0.21/24,create,,present,present,PASS
+ip_address,10.20.0.22/24,create,,present,present,PASS
+ip_address,10.20.0.23/24,create,,present,present,PASS
+ip_address,10.20.0.24/24,create,,present,present,PASS
+ip_address,10.20.0.25/24,create,,present,present,PASS
+ip_address,10.20.0.26/24,create,,present,present,PASS
+ip_address,10.20.0.27/24,create,,present,present,PASS
+ip_address,10.20.0.28/24,create,,present,present,PASS
+ip_address,10.20.0.29/24,create,,present,present,PASS
+ip_address,10.255.1.1/32,create,,present,present,PASS
+ip_address,10.255.1.2/32,create,,present,present,PASS
+ip_address,10.255.2.1/32,create,,present,present,PASS
+ip_address,10.255.2.2/32,create,,present,present,PASS
+ip_address,10.30.0.10/24,create,,present,present,PASS
+ip_address,10.30.0.11/24,create,,present,present,PASS
+ip_address,10.30.0.12/24,create,,present,present,PASS
+ip_address,10.30.0.13/24,create,,present,present,PASS
+ip_address,10.30.0.14/24,create,,present,present,PASS
+ip_address,10.30.0.15/24,create,,present,present,PASS
+ip_address,10.30.0.16/24,create,,present,present,PASS
+ip_address,10.30.0.17/24,create,,present,present,PASS
+ip_address,10.30.0.18/24,create,,present,present,PASS
+ip_address,10.30.0.19/24,create,,present,present,PASS
+vlan,BR-NYC1/10,create,,present,present,PASS
+vlan,BR-NYC1/20,create,,present,present,PASS
+vlan,BR-NYC1/30,create,,present,present,PASS
+vlan,BR-NYC1/40,create,,present,present,PASS
+vlan,DC-ATL1/10,create,,present,present,PASS
+vlan,DC-ATL1/100,create,,present,present,PASS
+vlan,DC-ATL1/200,create,,present,present,PASS
+vlan,DC-DAL1/10,create,,present,present,PASS
+vlan,DC-DAL1/100,create,,present,present,PASS
+vlan,DC-DAL1/200,create,,present,present,PASS
+vlan,DC-DAL1/999,create,,present,present,PASS
+prefix,10.10.0.0/24,create,,present,present,PASS
+prefix,10.11.0.0/22,create,,present,present,PASS
+prefix,10.12.0.0/24,create,,present,present,PASS
+prefix,10.19.99.0/24,create,,present,present,PASS
+prefix,10.20.0.0/24,create,,present,present,PASS
+prefix,10.21.0.0/22,create,,present,present,PASS
+prefix,10.22.0.0/24,create,,present,present,PASS
+prefix,10.255.1.0/24,create,,present,present,PASS
+prefix,10.255.2.0/24,create,,present,present,PASS
+prefix,10.255.3.0/24,create,,present,present,PASS
+prefix,10.30.0.0/24,create,,present,present,PASS
+prefix,10.31.20.0/24,create,,present,present,PASS
+prefix,10.31.30.0/24,create,,present,present,PASS
+prefix,10.31.40.0/24,create,,present,present,PASS
+cable,BR-NYC1/nyc1-acc-01/GigabitEthernet1/0/48 <> BR-NYC1/nyc1-wlc-01/TenGigabitEthernet0/1/0,create,,present,present,PASS
+cable,BR-NYC1/nyc1-acc-01/TenGigabitEthernet1/1/1 <> BR-NYC1/nyc1-bfw-01/port2,create,,present,present,PASS
+cable,BR-NYC1/nyc1-acc-02/GigabitEthernet1/0/48 <> BR-NYC1/nyc1-wlc-02/TenGigabitEthernet0/1/0,create,,present,present,PASS
+cable,BR-NYC1/nyc1-acc-02/TenGigabitEthernet1/1/1 <> BR-NYC1/nyc1-bfw-01/port3,create,,present,present,PASS
+cable,BR-NYC1/nyc1-acc-03/TenGigabitEthernet1/1/1 <> BR-NYC1/nyc1-bfw-01/port4,create,,present,present,PASS
+cable,BR-NYC1/nyc1-acc-04/TenGigabitEthernet1/1/1 <> BR-NYC1/nyc1-bfw-01/port5,create,,present,present,PASS
+cable,BR-NYC1/nyc1-acc-05/TenGigabitEthernet1/1/1 <> BR-NYC1/nyc1-bfw-01/port6,create,,present,present,PASS
+cable,BR-NYC1/nyc1-acc-06/TenGigabitEthernet1/1/1 <> BR-NYC1/nyc1-bfw-01/port7,create,,present,present,PASS
+cable,BR-NYC1/nyc1-bfw-01/port1 <> BR-NYC1/nyc1-rtr-01/TenGigabitEthernet0/1/0,create,,present,present,PASS
+cable,DC-ATL1/atl1-core-01/et-0/0/0 <> DC-ATL1/atl1-spine-01/Ethernet15/1,create,,present,present,PASS
+cable,DC-ATL1/atl1-core-01/et-0/0/1 <> DC-ATL1/atl1-spine-02/Ethernet16/1,create,,present,present,PASS
+cable,DC-ATL1/atl1-core-02/et-0/0/0 <> DC-ATL1/atl1-spine-02/Ethernet15/1,create,,present,present,PASS
+cable,DC-ATL1/atl1-core-02/et-0/0/1 <> DC-ATL1/atl1-spine-01/Ethernet16/1,create,,present,present,PASS
+cable,DC-ATL1/atl1-fw-01/ethernet1/1 <> DC-ATL1/atl1-leaf-01/Ethernet1,create,,present,present,PASS
+cable,DC-ATL1/atl1-fw-02/ethernet1/1 <> DC-ATL1/atl1-leaf-02/Ethernet1,create,,present,present,PASS
+cable,DC-ATL1/atl1-leaf-01/Ethernet49/1 <> DC-ATL1/atl1-spine-01/Ethernet1/1,create,,present,present,PASS
+cable,DC-ATL1/atl1-leaf-01/Ethernet50/1 <> DC-ATL1/atl1-spine-02/Ethernet1/1,create,,present,present,PASS
+cable,DC-ATL1/atl1-leaf-02/Ethernet49/1 <> DC-ATL1/atl1-spine-01/Ethernet2/1,create,,present,present,PASS
+cable,DC-ATL1/atl1-leaf-02/Ethernet50/1 <> DC-ATL1/atl1-spine-02/Ethernet2/1,create,,present,present,PASS
+cable,DC-ATL1/atl1-leaf-03/Ethernet49/1 <> DC-ATL1/atl1-spine-01/Ethernet3/1,create,,present,present,PASS
+cable,DC-ATL1/atl1-leaf-03/Ethernet50/1 <> DC-ATL1/atl1-spine-02/Ethernet3/1,create,,present,present,PASS
+cable,DC-ATL1/atl1-leaf-04/Ethernet49/1 <> DC-ATL1/atl1-spine-01/Ethernet4/1,create,,present,present,PASS
+cable,DC-ATL1/atl1-leaf-04/Ethernet50/1 <> DC-ATL1/atl1-spine-02/Ethernet4/1,create,,present,present,PASS
+cable,DC-ATL1/atl1-leaf-05/Ethernet49/1 <> DC-ATL1/atl1-spine-01/Ethernet5/1,create,,present,present,PASS
+cable,DC-ATL1/atl1-leaf-05/Ethernet50/1 <> DC-ATL1/atl1-spine-02/Ethernet5/1,create,,present,present,PASS
+cable,DC-ATL1/atl1-leaf-06/Ethernet49/1 <> DC-ATL1/atl1-spine-01/Ethernet6/1,create,,present,present,PASS
+cable,DC-ATL1/atl1-leaf-06/Ethernet50/1 <> DC-ATL1/atl1-spine-02/Ethernet6/1,create,,present,present,PASS
+cable,DC-ATL1/atl1-leaf-07/Ethernet49/1 <> DC-ATL1/atl1-spine-01/Ethernet7/1,create,,present,present,PASS
+cable,DC-ATL1/atl1-leaf-07/Ethernet50/1 <> DC-ATL1/atl1-spine-02/Ethernet7/1,create,,present,present,PASS
+cable,DC-ATL1/atl1-leaf-08/Ethernet49/1 <> DC-ATL1/atl1-spine-01/Ethernet8/1,create,,present,present,PASS
+cable,DC-ATL1/atl1-leaf-08/Ethernet50/1 <> DC-ATL1/atl1-spine-02/Ethernet8/1,create,,present,present,PASS
+cable,DC-ATL1/atl1-leaf-09/Ethernet49/1 <> DC-ATL1/atl1-spine-01/Ethernet9/1,create,,present,present,PASS
+cable,DC-ATL1/atl1-leaf-09/Ethernet50/1 <> DC-ATL1/atl1-spine-02/Ethernet9/1,create,,present,present,PASS
+cable,DC-ATL1/atl1-leaf-10/Ethernet49/1 <> DC-ATL1/atl1-spine-01/Ethernet10/1,create,,present,present,PASS
+cable,DC-ATL1/atl1-leaf-10/Ethernet50/1 <> DC-ATL1/atl1-spine-02/Ethernet10/1,create,,present,present,PASS
+cable,DC-ATL1/atl1-leaf-11/Ethernet49/1 <> DC-ATL1/atl1-spine-01/Ethernet11/1,create,,present,present,PASS
+cable,DC-ATL1/atl1-leaf-11/Ethernet50/1 <> DC-ATL1/atl1-spine-02/Ethernet11/1,create,,present,present,PASS
+cable,DC-ATL1/atl1-leaf-12/Ethernet49/1 <> DC-ATL1/atl1-spine-01/Ethernet12/1,create,,present,present,PASS
+cable,DC-ATL1/atl1-leaf-12/Ethernet50/1 <> DC-ATL1/atl1-spine-02/Ethernet12/1,create,,present,present,PASS
+cable,DC-DAL1/dal1-core-01/et-0/0/0 <> DC-DAL1/dal1-spine-01/Ethernet15/1,create,,present,present,PASS
+cable,DC-DAL1/dal1-core-01/et-0/0/1 <> DC-DAL1/dal1-spine-02/Ethernet16/1,create,,present,present,PASS
+cable,DC-DAL1/dal1-core-02/et-0/0/0 <> DC-DAL1/dal1-spine-02/Ethernet15/1,create,,present,present,PASS
+cable,DC-DAL1/dal1-core-02/et-0/0/1 <> DC-DAL1/dal1-spine-01/Ethernet16/1,create,,present,present,PASS
+cable,DC-DAL1/dal1-fw-01/ethernet1/1 <> DC-DAL1/dal1-leaf-01/Ethernet1,create,,present,present,PASS
+cable,DC-DAL1/dal1-fw-02/ethernet1/1 <> DC-DAL1/dal1-leaf-02/Ethernet1,create,,present,present,PASS
+cable,DC-DAL1/dal1-leaf-01/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet1/1,create,,present,present,PASS
+cable,DC-DAL1/dal1-leaf-01/Ethernet50/1 <> DC-DAL1/dal1-spine-02/Ethernet1/1,create,,present,present,PASS
+cable,DC-DAL1/dal1-leaf-02/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet2/1,create,,present,present,PASS
+cable,DC-DAL1/dal1-leaf-02/Ethernet50/1 <> DC-DAL1/dal1-spine-02/Ethernet2/1,create,,present,present,PASS
+cable,DC-DAL1/dal1-leaf-03/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet3/1,create,,present,present,PASS
+cable,DC-DAL1/dal1-leaf-03/Ethernet50/1 <> DC-DAL1/dal1-spine-02/Ethernet3/1,create,,present,present,PASS
+cable,DC-DAL1/dal1-leaf-04/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet4/1,create,,present,present,PASS
+cable,DC-DAL1/dal1-leaf-04/Ethernet50/1 <> DC-DAL1/dal1-spine-02/Ethernet4/1,create,,present,present,PASS
+cable,DC-DAL1/dal1-leaf-05/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet5/1,create,,present,present,PASS
+cable,DC-DAL1/dal1-leaf-05/Ethernet50/1 <> DC-DAL1/dal1-spine-02/Ethernet5/1,create,,present,present,PASS
+cable,DC-DAL1/dal1-leaf-06/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet6/1,create,,present,present,PASS
+cable,DC-DAL1/dal1-leaf-06/Ethernet50/1 <> DC-DAL1/dal1-spine-02/Ethernet6/1,create,,present,present,PASS
+cable,DC-DAL1/dal1-leaf-07/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet7/1,create,,present,present,PASS
+cable,DC-DAL1/dal1-leaf-07/Ethernet50/1 <> DC-DAL1/dal1-spine-02/Ethernet7/1,create,,present,present,PASS
+cable,DC-DAL1/dal1-leaf-08/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet8/1,create,,present,present,PASS
+cable,DC-DAL1/dal1-leaf-08/Ethernet50/1 <> DC-DAL1/dal1-spine-02/Ethernet8/1,create,,present,present,PASS
+cable,DC-DAL1/dal1-leaf-09/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet9/1,create,,present,present,PASS
+cable,DC-DAL1/dal1-leaf-09/Ethernet50/1 <> DC-DAL1/dal1-spine-02/Ethernet9/1,create,,present,present,PASS
+cable,DC-DAL1/dal1-leaf-10/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet10/1,create,,present,present,PASS
+cable,DC-DAL1/dal1-leaf-10/Ethernet50/1 <> DC-DAL1/dal1-spine-02/Ethernet10/1,create,,present,present,PASS
+cable,DC-DAL1/dal1-leaf-11/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet11/1,create,,present,present,PASS
+cable,DC-DAL1/dal1-leaf-11/Ethernet50/1 <> DC-DAL1/dal1-spine-02/Ethernet11/1,create,,present,present,PASS
+cable,DC-DAL1/dal1-leaf-12/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet12/1,create,,present,present,PASS
+cable,DC-DAL1/dal1-leaf-12/Ethernet50/1 <> DC-DAL1/dal1-spine-02/Ethernet12/1,create,,present,present,PASS
+all,*,sweep,,0 approved objects drifting,0 objects drifting,PASS

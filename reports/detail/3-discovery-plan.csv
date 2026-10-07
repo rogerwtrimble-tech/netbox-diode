@@ -1,29 +1,49 @@
 object_type,key,action,field,netbox_before,source_value
 device,BR-NYC1/nyc1-acc-03,update,serial,FOCQTKERWFY,FOC1DUFURQD
-device,BR-NYC1/nyc1-acc-07,create,,,C9300-48P
-device,DC-ATL1/atl1-lab-sw01,create,,,C9300-48P
+device,BR-NYC1/nyc1-acc-07,create,,,
+device,DC-ATL1/atl1-lab-sw01,create,,,
 device,DC-ATL1/atl1-leaf-11,update,status,planned,active
 device,DC-ATL1/atl1-leaf-12,update,status,planned,active
 device,DC-ATL1/atl1-spine-01,update,platform,eos-4.31,eos-4.33
 device,DC-DAL1/dal1-leaf-04,update,serial,JPE5TY4D2YY,JPEFJPFWD10
-device,DC-DAL1/dal1-leaf-13,create,,,DCS-7050SX3-48YC8
+device,DC-DAL1/dal1-leaf-13,create,,,
 device,DC-DAL1/dal1-spine-01,update,platform,eos-4.31,eos-4.33
 device,DC-DAL1/dal1-spine-02,update,platform,eos-4.31,eos-4.33
 device,BR-NYC1/nyc1-acc-06,stale,status,active,
 device,DC-ATL1/atl1-leaf-07,stale,status,active,
 device,DC-DAL1/dal1-oob-02,stale,status,active,
-interface,BR-NYC1/nyc1-acc-07/GigabitEthernet0/0,create,,,1000base-t
-interface,BR-NYC1/nyc1-acc-07/TenGigabitEthernet1/1/1,create,,,10gbase-x-sfpp
-interface,DC-ATL1/atl1-lab-sw01/GigabitEthernet0/0,create,,,1000base-t
-interface,DC-ATL1/atl1-lab-sw01/TenGigabitEthernet1/1/1,create,,,10gbase-x-sfpp
-interface,DC-DAL1/dal1-core-01/et-0/0/2,create,,,100gbase-x-qsfp28
-interface,DC-DAL1/dal1-leaf-13/Ethernet1,create,,,25gbase-x-sfp28
-interface,DC-DAL1/dal1-leaf-13/Ethernet49/1,create,,,100gbase-x-qsfp28
-interface,DC-DAL1/dal1-leaf-13/Management1,create,,,1000base-t
-ip_address,10.10.0.40/24,create,assigned_to,,DC-DAL1/dal1-leaf-13/Management1
-ip_address,10.20.0.40/24,create,assigned_to,,DC-ATL1/atl1-lab-sw01/GigabitEthernet0/0
-ip_address,10.20.1.10/24,create,assigned_to,,DC-ATL1/atl1-fw-02/mgmt
-ip_address,10.30.0.40/24,create,assigned_to,,BR-NYC1/nyc1-acc-07/GigabitEthernet0/0
-ip_address,10.30.1.10/24,create,assigned_to,,BR-NYC1/nyc1-wlc-01/GigabitEthernet0
+interface,BR-NYC1/nyc1-acc-07/GigabitEthernet0/0,create,,,
+interface,BR-NYC1/nyc1-acc-07/GigabitEthernet1/0/48,create,,,
+interface,BR-NYC1/nyc1-acc-07/TenGigabitEthernet1/1/1,create,,,
+interface,DC-ATL1/atl1-lab-sw01/GigabitEthernet0/0,create,,,
+interface,DC-ATL1/atl1-lab-sw01/GigabitEthernet1/0/48,create,,,
+interface,DC-ATL1/atl1-lab-sw01/TenGigabitEthernet1/1/1,create,,,
+interface,DC-DAL1/dal1-core-01/et-0/0/2,create,,,
+interface,DC-DAL1/dal1-leaf-13/Ethernet1,create,,,
+interface,DC-DAL1/dal1-leaf-13/Ethernet49/1,create,,,
+interface,DC-DAL1/dal1-leaf-13/Ethernet50/1,create,,,
+interface,DC-DAL1/dal1-leaf-13/Management1,create,,,
+ip_address,10.10.0.40/24,create,,,
+ip_address,10.20.0.40/24,create,,,
+ip_address,10.20.1.10/24,create,,,
+ip_address,10.30.0.40/24,create,,,
+ip_address,10.30.1.10/24,create,,,
 ip_address,10.20.0.27/24,stale,assigned_to,DC-ATL1/atl1-fw-02/mgmt,
 ip_address,10.30.0.18/24,stale,assigned_to,BR-NYC1/nyc1-wlc-01/GigabitEthernet0,
+vlan,BR-NYC1/50,create,,,
+vlan,DC-ATL1/200,update,name,storage,storage-nvme
+vlan,DC-DAL1/999,stale,,,
+prefix,10.12.0.0/24,update,status,reserved,active
+prefix,10.20.1.0/24,create,,,
+prefix,10.30.1.0/24,create,,,
+prefix,10.31.50.0/24,create,,,
+prefix,10.19.99.0/24,stale,,,
+cable,BR-NYC1/nyc1-acc-07/TenGigabitEthernet1/1/1 <> BR-NYC1/nyc1-bfw-01/port8,create,,,
+cable,DC-ATL1/atl1-lab-sw01/TenGigabitEthernet1/1/1 <> DC-ATL1/atl1-leaf-12/Ethernet1,create,,,
+cable,DC-DAL1/dal1-leaf-02/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet14/1,blocked,conflicts_with,DC-DAL1/dal1-leaf-02/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet2/1,
+cable,DC-DAL1/dal1-leaf-13/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet13/1,create,,,
+cable,DC-DAL1/dal1-leaf-13/Ethernet50/1 <> DC-DAL1/dal1-spine-02/Ethernet13/1,create,,,
+cable,BR-NYC1/nyc1-acc-06/TenGigabitEthernet1/1/1 <> BR-NYC1/nyc1-bfw-01/port7,stale,,,
+cable,DC-ATL1/atl1-leaf-07/Ethernet49/1 <> DC-ATL1/atl1-spine-01/Ethernet7/1,stale,,,
+cable,DC-ATL1/atl1-leaf-07/Ethernet50/1 <> DC-ATL1/atl1-spine-02/Ethernet7/1,stale,,,
+cable,DC-DAL1/dal1-leaf-02/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet2/1,stale,,,

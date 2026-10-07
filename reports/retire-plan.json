@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "source": "discovery",
+  "sites": [
+    "BR-NYC1",
+    "DC-ATL1",
+    "DC-DAL1"
+  ],
+  "grace_days": 0,
+  "created_at": "2026-10-07T08:25:19.243064Z",
+  "items": [
+    {
+      "object_type": "cable",
+      "key": "BR-NYC1/nyc1-acc-06/TenGigabitEthernet1/1/1 <> BR-NYC1/nyc1-bfw-01/port7",
+      "netbox_id": 2,
+      "reason": "attached to retired BR-NYC1/nyc1-acc-06",
+      "fingerprint": "045f9fe597bcec86",
+      "decision": "approve"
+    },
+    {
+      "object_type": "cable",
+      "key": "DC-ATL1/atl1-leaf-07/Ethernet49/1 <> DC-ATL1/atl1-spine-01/Ethernet7/1",
+      "netbox_id": 28,
+      "reason": "attached to retired DC-ATL1/atl1-leaf-07",
+      "fingerprint": "61785586de7efe17",
+      "decision": "approve"
+    },
+    {
+      "object_type": "cable",
+      "key": "DC-ATL1/atl1-leaf-07/Ethernet50/1 <> DC-ATL1/atl1-spine-02/Ethernet7/1",
+      "netbox_id": 29,
+      "reason": "attached to retired DC-ATL1/atl1-leaf-07",
+      "fingerprint": "1aea6215c4a8f255",
+      "decision": "approve"
+    },
+    {
+      "object_type": "cable",
+      "key": "DC-DAL1/dal1-leaf-02/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet2/1",
+      "netbox_id": 48,
+      "reason": "absent from discovery",
+      "fingerprint": "2586fc26d4cecf69",
+      "decision": "approve"
+    },
+    {
+      "object_type": "ip_address",
+      "key": "10.10.0.29/24",
+      "netbox_id": 52,
+      "reason": "assigned to retired DC-DAL1/dal1-oob-02",
+      "fingerprint": "634ab3e24094c057",
+      "decision": "approve"
+    },
+    {
+      "object_type": "ip_address",
+      "key": "10.20.0.20/24",
+      "netbox_id": 23,
+      "reason": "assigned to retired DC-ATL1/atl1-leaf-07",
+      "fingerprint": "b403b0c22a9f3b96",
+      "decision": "approve"
+    },
+    {
+      "object_type": "ip_address",
+      "key": "10.20.0.27/24",
+      "netbox_id": 15,
+      "reason": "absent from discovery",
+      "fingerprint": "91a166b950da4f7b",
+      "decision": "approve"
+    },
+    {
+      "object_type": "ip_address",
+      "key": "10.30.0.17/24",
+      "netbox_id": 18,
+      "reason": "assigned to retired BR-NYC1/nyc1-acc-06",
+      "fingerprint": "fba0152cc54aa1e2",
+      "decision": "approve"
+    },
+    {
+      "object_type": "ip_address",
+      "key": "10.30.0.18/24",
+      "netbox_id": 6,
+      "reason": "absent from discovery",
+      "fingerprint": "102739144fbf4ffe",
+      "decision": "approve"
+    },
+    {
+      "object_type": "prefix",
+      "key": "10.19.99.0/24",
+      "netbox_id": 6,
+      "reason": "absent from discovery",
+      "fingerprint": "603c192b94576bc1",
+      "decision": "approve"
+    },
+    {
+      "object_type": "vlan",
+      "key": "DC-DAL1/999",
+      "netbox_id": 11,
+      "reason": "absent from discovery",
+      "fingerprint": "ff715b2cc689e173",
+      "decision": "approve"
+    },
+    {
+      "object_type": "device",
+      "key": "BR-NYC1/nyc1-acc-06",
+      "netbox_id": 7,
+      "reason": "stale since 2026-10-02 (5d >= 0d)",
+      "fingerprint": "ac46a0fc331b1e9d",
+      "decision": "approve"
+    },
+    {
+      "object_type": "device",
+      "key": "DC-ATL1/atl1-leaf-07",
+      "netbox_id": 21,
+      "reason": "stale since 2026-10-02 (5d >= 0d)",
+      "fingerprint": "17907a9075c6a4f6",
+      "decision": "approve"
+    },
+    {
+      "object_type": "device",
+      "key": "DC-DAL1/dal1-oob-02",
+      "netbox_id": 32,
+      "reason": "stale since 2026-10-02 (5d >= 0d)",
+      "fingerprint": "9fb346bcf2e894b9",
+      "decision": "approve"
+    }
+  ],
+  "waiting": []
+}

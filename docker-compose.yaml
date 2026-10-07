@@ -259,7 +259,7 @@ services:
     build:
       context: .
       secrets: [extra_ca]
-    image: netbox-diode/inventory-recon:0.1.0
+    image: netbox-diode/inventory-recon:0.2.0
     profiles: ["tools"]
     environment:
       RECON_NETBOX_URL: http://netbox:8080

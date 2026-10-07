@@ -1,0 +1,320 @@
+{
+  "version": 1,
+  "source": "discovery",
+  "snapshot_sha256": "cc5e71a5cb8a4f1791271fae674260eb3830761651587dbcd88d5f6a2bd45818",
+  "created_at": "2026-10-07T08:24:31.866471Z",
+  "items": [
+    {
+      "group": "cable:BR-NYC1/nyc1-acc-06/TenGigabitEthernet1/1/1 <> BR-NYC1/nyc1-bfw-01/port7",
+      "changes": [
+        "stale cable BR-NYC1/nyc1-acc-06/TenGigabitEthernet1/1/1 <> BR-NYC1/nyc1-bfw-01/port7"
+      ],
+      "fingerprint": "5b82b0690f2c6fbb",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "cable:BR-NYC1/nyc1-acc-07/TenGigabitEthernet1/1/1 <> BR-NYC1/nyc1-bfw-01/port8",
+      "changes": [
+        "create cable BR-NYC1/nyc1-acc-07/TenGigabitEthernet1/1/1 <> BR-NYC1/nyc1-bfw-01/port8"
+      ],
+      "fingerprint": "f21999c7ded33e43",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "cable:DC-ATL1/atl1-lab-sw01/TenGigabitEthernet1/1/1 <> DC-ATL1/atl1-leaf-12/Ethernet1",
+      "changes": [
+        "create cable DC-ATL1/atl1-lab-sw01/TenGigabitEthernet1/1/1 <> DC-ATL1/atl1-leaf-12/Ethernet1"
+      ],
+      "fingerprint": "f8cfbf9e3fe7e043",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "cable:DC-ATL1/atl1-leaf-07/Ethernet49/1 <> DC-ATL1/atl1-spine-01/Ethernet7/1",
+      "changes": [
+        "stale cable DC-ATL1/atl1-leaf-07/Ethernet49/1 <> DC-ATL1/atl1-spine-01/Ethernet7/1"
+      ],
+      "fingerprint": "ea62349e14675624",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "cable:DC-ATL1/atl1-leaf-07/Ethernet50/1 <> DC-ATL1/atl1-spine-02/Ethernet7/1",
+      "changes": [
+        "stale cable DC-ATL1/atl1-leaf-07/Ethernet50/1 <> DC-ATL1/atl1-spine-02/Ethernet7/1"
+      ],
+      "fingerprint": "3967eddc9b9c1320",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "cable:DC-DAL1/dal1-leaf-02/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet14/1",
+      "changes": [
+        "blocked cable DC-DAL1/dal1-leaf-02/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet14/1: endpoint held by DC-DAL1/dal1-leaf-02/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet2/1"
+      ],
+      "fingerprint": "aaecf311eae968d0",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "cable:DC-DAL1/dal1-leaf-02/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet2/1",
+      "changes": [
+        "stale cable DC-DAL1/dal1-leaf-02/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet2/1"
+      ],
+      "fingerprint": "217a8f02a9aeb5e6",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "cable:DC-DAL1/dal1-leaf-13/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet13/1",
+      "changes": [
+        "create cable DC-DAL1/dal1-leaf-13/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet13/1"
+      ],
+      "fingerprint": "56e464a0914bed71",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "cable:DC-DAL1/dal1-leaf-13/Ethernet50/1 <> DC-DAL1/dal1-spine-02/Ethernet13/1",
+      "changes": [
+        "create cable DC-DAL1/dal1-leaf-13/Ethernet50/1 <> DC-DAL1/dal1-spine-02/Ethernet13/1"
+      ],
+      "fingerprint": "5573b8841e9e362c",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "device:BR-NYC1/nyc1-acc-03",
+      "changes": [
+        "update device BR-NYC1/nyc1-acc-03: serial 'FOCQTKERWFY' -> 'FOC1DUFURQD'"
+      ],
+      "fingerprint": "a0b9d9b515cf37d3",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "device:BR-NYC1/nyc1-acc-06",
+      "changes": [
+        "stale device BR-NYC1/nyc1-acc-06"
+      ],
+      "fingerprint": "378a9154875949f6",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "device:BR-NYC1/nyc1-acc-07",
+      "changes": [
+        "create device BR-NYC1/nyc1-acc-07",
+        "create interface BR-NYC1/nyc1-acc-07/GigabitEthernet0/0",
+        "create interface BR-NYC1/nyc1-acc-07/GigabitEthernet1/0/48",
+        "create interface BR-NYC1/nyc1-acc-07/TenGigabitEthernet1/1/1",
+        "create ip_address 10.30.0.40/24"
+      ],
+      "fingerprint": "24dbf5a90a73a86f",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "device:BR-NYC1/nyc1-wlc-01",
+      "changes": [
+        "create ip_address 10.30.1.10/24",
+        "stale ip_address 10.30.0.18/24"
+      ],
+      "fingerprint": "e6e4f334dd3d128c",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "device:DC-ATL1/atl1-fw-02",
+      "changes": [
+        "create ip_address 10.20.1.10/24",
+        "stale ip_address 10.20.0.27/24"
+      ],
+      "fingerprint": "54c5a341ef29e397",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "device:DC-ATL1/atl1-lab-sw01",
+      "changes": [
+        "create device DC-ATL1/atl1-lab-sw01",
+        "create interface DC-ATL1/atl1-lab-sw01/GigabitEthernet0/0",
+        "create interface DC-ATL1/atl1-lab-sw01/GigabitEthernet1/0/48",
+        "create interface DC-ATL1/atl1-lab-sw01/TenGigabitEthernet1/1/1",
+        "create ip_address 10.20.0.40/24"
+      ],
+      "fingerprint": "5566d1da174cb351",
+      "decision": "reject",
+      "note": "unauthorised lab switch - rejected by demo reviewer"
+    },
+    {
+      "group": "device:DC-ATL1/atl1-leaf-07",
+      "changes": [
+        "stale device DC-ATL1/atl1-leaf-07"
+      ],
+      "fingerprint": "86b84064998d6b21",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "device:DC-ATL1/atl1-leaf-11",
+      "changes": [
+        "update device DC-ATL1/atl1-leaf-11: status 'planned' -> 'active'"
+      ],
+      "fingerprint": "6c16c621aa14a745",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "device:DC-ATL1/atl1-leaf-12",
+      "changes": [
+        "update device DC-ATL1/atl1-leaf-12: status 'planned' -> 'active'"
+      ],
+      "fingerprint": "4a0810dce530a003",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "device:DC-ATL1/atl1-spine-01",
+      "changes": [
+        "update device DC-ATL1/atl1-spine-01: platform 'eos-4.31' -> 'eos-4.33'"
+      ],
+      "fingerprint": "a383e028bd048195",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "device:DC-DAL1/dal1-core-01",
+      "changes": [
+        "create interface DC-DAL1/dal1-core-01/et-0/0/2"
+      ],
+      "fingerprint": "ae4ecfda74a0bb5b",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "device:DC-DAL1/dal1-leaf-04",
+      "changes": [
+        "update device DC-DAL1/dal1-leaf-04: serial 'JPE5TY4D2YY' -> 'JPEFJPFWD10'"
+      ],
+      "fingerprint": "bb09de350764d68c",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "device:DC-DAL1/dal1-leaf-13",
+      "changes": [
+        "create device DC-DAL1/dal1-leaf-13",
+        "create interface DC-DAL1/dal1-leaf-13/Ethernet1",
+        "create interface DC-DAL1/dal1-leaf-13/Ethernet49/1",
+        "create interface DC-DAL1/dal1-leaf-13/Ethernet50/1",
+        "create interface DC-DAL1/dal1-leaf-13/Management1",
+        "create ip_address 10.10.0.40/24"
+      ],
+      "fingerprint": "09be6f6aee604ff8",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "device:DC-DAL1/dal1-oob-02",
+      "changes": [
+        "stale device DC-DAL1/dal1-oob-02"
+      ],
+      "fingerprint": "6023290eeb2c25a0",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "device:DC-DAL1/dal1-spine-01",
+      "changes": [
+        "update device DC-DAL1/dal1-spine-01: platform 'eos-4.31' -> 'eos-4.33'"
+      ],
+      "fingerprint": "67df2afcbcc1f13b",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "device:DC-DAL1/dal1-spine-02",
+      "changes": [
+        "update device DC-DAL1/dal1-spine-02: platform 'eos-4.31' -> 'eos-4.33'"
+      ],
+      "fingerprint": "971e7ce650e93c42",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "prefix:10.12.0.0/24",
+      "changes": [
+        "update prefix 10.12.0.0/24: status 'reserved' -> 'active'"
+      ],
+      "fingerprint": "f5930925d56c8747",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "prefix:10.19.99.0/24",
+      "changes": [
+        "stale prefix 10.19.99.0/24"
+      ],
+      "fingerprint": "7cacc292db7f5a92",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "prefix:10.20.1.0/24",
+      "changes": [
+        "create prefix 10.20.1.0/24"
+      ],
+      "fingerprint": "7c4a08c980193392",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "prefix:10.30.1.0/24",
+      "changes": [
+        "create prefix 10.30.1.0/24"
+      ],
+      "fingerprint": "b5b3c9530c2815ba",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "prefix:10.31.50.0/24",
+      "changes": [
+        "create prefix 10.31.50.0/24"
+      ],
+      "fingerprint": "aa278b0f1ae8c0af",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "vlan:BR-NYC1/50",
+      "changes": [
+        "create vlan BR-NYC1/50"
+      ],
+      "fingerprint": "4a15222fc74ba2c8",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "vlan:DC-ATL1/200",
+      "changes": [
+        "update vlan DC-ATL1/200: name 'storage' -> 'storage-nvme'"
+      ],
+      "fingerprint": "4e72cfc6cf626f0d",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "vlan:DC-DAL1/999",
+      "changes": [
+        "stale vlan DC-DAL1/999"
+      ],
+      "fingerprint": "0ddfc1c95c391168",
+      "decision": "approve",
+      "note": ""
+    }
+  ]
+}

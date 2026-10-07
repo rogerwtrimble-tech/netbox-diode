@@ -17,7 +17,9 @@ safe. OSS Diode only creates and updates, though; it never deletes and never rep
 | Authenticated ingestion, matching, create/update, dependency ordering | Diode (ingester + reconciler + NetBox plugin) |
 | Input validation (schema, duplicate serials/IPs/names) | inventory-recon (pydantic) |
 | Plan before write: create / update / unchanged / stale | inventory-recon (`diff.py`) |
-| Stale assets (in NetBox, absent from the source) | inventory-recon flags them through Diode: `status=offline` + tag `recon-stale`. Nothing is ever deleted |
+| Stale assets (in NetBox, absent from the source) | inventory-recon flags them through Diode: `status=offline` + custom fields `recon_state=stale`, `recon_stale_since` |
+| Review before apply | inventory-recon: editable review file, approve/reject per group, refused if out of date |
+| Deletion (Diode cannot delete) | inventory-recon `retire`: approved plan, grace period, every item re-checked, NetBox REST API |
 | Proof the write landed: wait for convergence, verify each item, sweep for residual drift | inventory-recon (`reconcile.py`) |
 | Audit: summary + detail reports, NetBox changelog write count | inventory-recon (`report.py`) + NetBox changelog (user `diode`) |
 
@@ -78,23 +80,32 @@ install (`make init`):
 ```mermaid
 sequenceDiagram
   autonumber
+  participant H as Reviewer
   participant R as inventory-recon
   participant NB as NetBox
   participant D as Diode
   R->>R: load + validate snapshot (fail fast, exit 2)
-  R->>NB: read devices / interfaces / IPs, changelog count
+  R->>NB: read in-scope state (site-filtered, fields=)
   R->>R: plan = diff(snapshot, NetBox, scope = snapshot sites)
-  R->>D: ingest every device (+ interfaces, IPs), one request per device
-  R->>D: partial update for stale devices (status=offline, tag recon-stale)
+  opt reviewed apply
+    R-->>H: review.json (one item per group)
+    H-->>R: approve / reject per item
+    R->>R: refuse (exit 3) unless the plan is unchanged since review
+  end
+  R->>D: create custom fields if missing, wait until NetBox has them
+  R->>D: ingest approved groups: devices (+ interfaces, IPs), VLANs, prefixes, cables
+  R->>D: partial update for stale devices (offline, recon_state=stale, recon_stale_since)
   D->>NB: match + create / update / no-op (async)
   loop every 5s until converged or timeout (600s)
     R->>NB: re-read state, recompute plan
-    Note over R,D: at timeout/2: re-send only still-drifting devices once (idempotent)
+    Note over R,D: at timeout/2: re-send only still-drifting groups once (idempotent)
   end
-  R->>R: verify each planned item + residual-drift sweep
-  R->>NB: changelog count (writes made by Diode)
+  R->>R: verify each approved item + residual-drift sweep
   R->>R: summary.md, detail CSVs, run.json, exit 0 / 1
 ```
+
+Retirement (deletes) is a separate, explicitly approved flow: see
+[limitations-plan.md §3](limitations-plan.md#3-retirement-the-only-delete-path-done).
 
 ## 4. Decision rules
 
@@ -117,6 +128,9 @@ flowchart TD
 | Device | site + name | role, manufacturer, model, platform, serial, status |
 | Interface | site + device + name | type, enabled |
 | IP address | address (with prefix length) | assigned interface |
+| VLAN | site + VID | name, status |
+| Prefix | prefix | site, VLAN, status |
+| Cable | unordered pair of interfaces | status |
 
 Scope rule: a source can mark objects stale only in the sites it reports on, so a branch-only
 discovery job can never flag data-center inventory.
@@ -124,7 +138,8 @@ discovery job can never flag data-center inventory.
 ## 5. Demo scenario (ground truth)
 
 `scripts/generate_mock_data.py` builds 50 devices across 3 sites (2 data centers, 1 branch; Juniper,
-Arista, Palo Alto, Opengear, Cisco, Fortinet), 141 interfaces and 54 IPs. It always produces the same
+Arista, Palo Alto, Opengear, Cisco, Fortinet), 233 interfaces, 54 IPs, 11 VLANs, 14 prefixes and
+69 cables (spine-leaf fabric, core and firewall links, branch star). It always produces the same
 output. The day-1 discovery file has exactly this drift, and `tests/test_diff.py` fails if the
 expected counts ever change:
 
@@ -136,7 +151,10 @@ expected counts ever change:
 | Went live | atl1-leaf-11/12 | status planned → active |
 | Mgmt re-addressed | nyc1-wlc-01, atl1-fw-02 | new IP created; old IP reported stale |
 | Line card added | dal1-core-01 | interface et-0/0/2 created |
-| Not seen by discovery | dal1-oob-02, atl1-leaf-07, nyc1-acc-06 | flagged offline + `recon-stale` |
+| Not seen by discovery | dal1-oob-02, atl1-leaf-07, nyc1-acc-06 | flagged stale, then retired on approval |
+| Unauthorised device | atl1-lab-sw01 | **rejected by the reviewer**; rejection carries over to later plans |
+| Uplink re-patched | dal1-leaf-02 Ethernet49/1 → spine-01 Ethernet14/1 | **BLOCKED**, old cable retired, then created |
+| VLAN / prefix changes | IoT VLAN added, storage VLAN renamed, legacy VLAN + prefix removed, 3 prefixes added, 1 status change | created / updated; removed ones retired |
 
 ## 6. Reliability measures
 
@@ -148,18 +166,14 @@ expected counts ever change:
   NetBox converges. Halfway through the timeout it re-sends only the objects that still drift, once.
 - **Fail closed.** An invalid snapshot is rejected before any write. Diode errors, missing items or
   unexpected drift fail the phase (exit 1) and are listed in the report.
-- **Read-only to NetBox.** All writes go through Diode, so they are authenticated, logged under the
-  `diode` user and visible in NetBox's changelog.
+- **Writes go through Diode.** Creates and updates are authenticated, logged under the `diode` user
+  and visible in NetBox's changelog. The only direct NetBox write is an approved retirement (delete).
+- **Guarded.** Unreviewed applies refuse large changes to existing inventory (blast-radius guard);
+  reviewed applies refuse if NetBox or the snapshot changed since review.
 - **Pinned versions** for every image and Python dependency. Health-gated startup (`up --wait`).
 
-## 7. Known limitations (MVP)
+## 7. Limitations
 
-- Reconciles devices, interfaces and IPs. Cables, VLANs, prefixes and VMs are supported by Diode but
-  not wired into the diff yet.
-- Diode tags are additive. A device flagged `recon-stale` that reappears goes back to its source
-  status, but the tag must be removed by hand.
-- Diode has no delete operation. Retiring stale assets is a deliberate human step.
-- Review-before-apply (`AUTO_APPLY_CHANGESETS=false`) needs a review UI that the OSS plugin does not
-  include. This MVP plans with `recon plan` (dry run) instead.
-- NetBox state is read in full (paged, 500 per page). That is fine for thousands of objects; filter
-  by site before going to six figures.
+The original MVP limitations, the design for each, and what was built: see
+[limitations-plan.md](limitations-plan.md). The remaining open item is VM reconciliation, which is
+designed but waits for a VM source.

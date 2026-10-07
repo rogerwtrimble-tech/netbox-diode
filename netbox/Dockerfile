@@ -1,5 +1,5 @@
 # NetBox (netbox-docker) with the Diode NetBox plugin baked in.
-ARG NETBOX_IMAGE=netboxcommunity/netbox:v4.7.2-5.1.1
+ARG NETBOX_IMAGE=netboxcommunity/netbox:v4.7.2-5.1.1@sha256:3cf9d3bd77aa186233b84d0ea1cf1755581d5e5678fa7d86ec3be62f79d0c643
 FROM ${NETBOX_IMAGE}
 
 COPY plugin_requirements.txt /opt/netbox/plugin_requirements.txt

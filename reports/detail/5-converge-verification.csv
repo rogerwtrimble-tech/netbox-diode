@@ -1,0 +1,9 @@
+object_type,key,action,field,expected,actual,result
+device,DC-ATL1/atl1-lab-sw01,create,,not applied,rejected,REJECTED
+interface,DC-ATL1/atl1-lab-sw01/GigabitEthernet0/0,create,,not applied,rejected,REJECTED
+interface,DC-ATL1/atl1-lab-sw01/GigabitEthernet1/0/48,create,,not applied,rejected,REJECTED
+interface,DC-ATL1/atl1-lab-sw01/TenGigabitEthernet1/1/1,create,,not applied,rejected,REJECTED
+ip_address,10.20.0.40/24,create,,not applied,rejected,REJECTED
+cable,DC-ATL1/atl1-lab-sw01/TenGigabitEthernet1/1/1 <> DC-ATL1/atl1-leaf-12/Ethernet1,create,,not applied,rejected,REJECTED
+cable,DC-DAL1/dal1-leaf-02/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet14/1,create,,present,present,PASS
+all,*,sweep,,0 approved objects drifting,0 objects drifting,PASS

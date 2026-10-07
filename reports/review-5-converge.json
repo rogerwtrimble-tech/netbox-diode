@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "source": "discovery",
+  "snapshot_sha256": "cc5e71a5cb8a4f1791271fae674260eb3830761651587dbcd88d5f6a2bd45818",
+  "created_at": "2026-10-07T08:25:24.610447Z",
+  "items": [
+    {
+      "group": "cable:DC-ATL1/atl1-lab-sw01/TenGigabitEthernet1/1/1 <> DC-ATL1/atl1-leaf-12/Ethernet1",
+      "changes": [
+        "create cable DC-ATL1/atl1-lab-sw01/TenGigabitEthernet1/1/1 <> DC-ATL1/atl1-leaf-12/Ethernet1"
+      ],
+      "fingerprint": "f8cfbf9e3fe7e043",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "cable:DC-DAL1/dal1-leaf-02/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet14/1",
+      "changes": [
+        "create cable DC-DAL1/dal1-leaf-02/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet14/1"
+      ],
+      "fingerprint": "5fed7530905c97e6",
+      "decision": "approve",
+      "note": ""
+    },
+    {
+      "group": "device:DC-ATL1/atl1-lab-sw01",
+      "changes": [
+        "create device DC-ATL1/atl1-lab-sw01",
+        "create interface DC-ATL1/atl1-lab-sw01/GigabitEthernet0/0",
+        "create interface DC-ATL1/atl1-lab-sw01/GigabitEthernet1/0/48",
+        "create interface DC-ATL1/atl1-lab-sw01/TenGigabitEthernet1/1/1",
+        "create ip_address 10.20.0.40/24"
+      ],
+      "fingerprint": "5566d1da174cb351",
+      "decision": "reject",
+      "note": "unauthorised lab switch - rejected by demo reviewer"
+    }
+  ]
+}

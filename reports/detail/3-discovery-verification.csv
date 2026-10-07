@@ -1,30 +1,50 @@
 object_type,key,action,field,expected,actual,result
 device,BR-NYC1/nyc1-acc-03,update,serial,FOC1DUFURQD,FOC1DUFURQD,PASS
-device,BR-NYC1/nyc1-acc-07,create,,C9300-48P,present,PASS
-device,DC-ATL1/atl1-lab-sw01,create,,C9300-48P,present,PASS
+device,BR-NYC1/nyc1-acc-07,create,,present,present,PASS
+device,DC-ATL1/atl1-lab-sw01,create,,not applied,rejected,REJECTED
 device,DC-ATL1/atl1-leaf-11,update,status,active,active,PASS
 device,DC-ATL1/atl1-leaf-12,update,status,active,active,PASS
 device,DC-ATL1/atl1-spine-01,update,platform,eos-4.33,eos-4.33,PASS
 device,DC-DAL1/dal1-leaf-04,update,serial,JPEFJPFWD10,JPEFJPFWD10,PASS
-device,DC-DAL1/dal1-leaf-13,create,,DCS-7050SX3-48YC8,present,PASS
+device,DC-DAL1/dal1-leaf-13,create,,present,present,PASS
 device,DC-DAL1/dal1-spine-01,update,platform,eos-4.33,eos-4.33,PASS
 device,DC-DAL1/dal1-spine-02,update,platform,eos-4.33,eos-4.33,PASS
-device,BR-NYC1/nyc1-acc-06,stale,status,offline +recon-stale,"offline tags=['recon-stale', 'src-cmdb']",PASS
-device,DC-ATL1/atl1-leaf-07,stale,status,offline +recon-stale,"offline tags=['recon-stale', 'src-cmdb']",PASS
-device,DC-DAL1/dal1-oob-02,stale,status,offline +recon-stale,"offline tags=['recon-stale', 'src-cmdb']",PASS
-interface,BR-NYC1/nyc1-acc-07/GigabitEthernet0/0,create,,1000base-t,present,PASS
-interface,BR-NYC1/nyc1-acc-07/TenGigabitEthernet1/1/1,create,,10gbase-x-sfpp,present,PASS
-interface,DC-ATL1/atl1-lab-sw01/GigabitEthernet0/0,create,,1000base-t,present,PASS
-interface,DC-ATL1/atl1-lab-sw01/TenGigabitEthernet1/1/1,create,,10gbase-x-sfpp,present,PASS
-interface,DC-DAL1/dal1-core-01/et-0/0/2,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-DAL1/dal1-leaf-13/Ethernet1,create,,25gbase-x-sfp28,present,PASS
-interface,DC-DAL1/dal1-leaf-13/Ethernet49/1,create,,100gbase-x-qsfp28,present,PASS
-interface,DC-DAL1/dal1-leaf-13/Management1,create,,1000base-t,present,PASS
-ip_address,10.10.0.40/24,create,assigned_to,DC-DAL1/dal1-leaf-13/Management1,DC-DAL1/dal1-leaf-13/Management1,PASS
-ip_address,10.20.0.40/24,create,assigned_to,DC-ATL1/atl1-lab-sw01/GigabitEthernet0/0,DC-ATL1/atl1-lab-sw01/GigabitEthernet0/0,PASS
-ip_address,10.20.1.10/24,create,assigned_to,DC-ATL1/atl1-fw-02/mgmt,DC-ATL1/atl1-fw-02/mgmt,PASS
-ip_address,10.30.0.40/24,create,assigned_to,BR-NYC1/nyc1-acc-07/GigabitEthernet0/0,BR-NYC1/nyc1-acc-07/GigabitEthernet0/0,PASS
-ip_address,10.30.1.10/24,create,assigned_to,BR-NYC1/nyc1-wlc-01/GigabitEthernet0,BR-NYC1/nyc1-wlc-01/GigabitEthernet0,PASS
-ip_address,10.20.0.27/24,stale,assigned_to,review,DC-ATL1/atl1-fw-02/mgmt,REPORTED
-ip_address,10.30.0.18/24,stale,assigned_to,review,BR-NYC1/nyc1-wlc-01/GigabitEthernet0,REPORTED
-all,*,sweep,,0 objects drifting,0 objects drifting,PASS
+device,BR-NYC1/nyc1-acc-06,stale,status,offline state=stale,offline state=stale since=2026-10-02,PASS
+device,DC-ATL1/atl1-leaf-07,stale,status,offline state=stale,offline state=stale since=2026-10-02,PASS
+device,DC-DAL1/dal1-oob-02,stale,status,offline state=stale,offline state=stale since=2026-10-02,PASS
+interface,BR-NYC1/nyc1-acc-07/GigabitEthernet0/0,create,,present,present,PASS
+interface,BR-NYC1/nyc1-acc-07/GigabitEthernet1/0/48,create,,present,present,PASS
+interface,BR-NYC1/nyc1-acc-07/TenGigabitEthernet1/1/1,create,,present,present,PASS
+interface,DC-ATL1/atl1-lab-sw01/GigabitEthernet0/0,create,,not applied,rejected,REJECTED
+interface,DC-ATL1/atl1-lab-sw01/GigabitEthernet1/0/48,create,,not applied,rejected,REJECTED
+interface,DC-ATL1/atl1-lab-sw01/TenGigabitEthernet1/1/1,create,,not applied,rejected,REJECTED
+interface,DC-DAL1/dal1-core-01/et-0/0/2,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-13/Ethernet1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-13/Ethernet49/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-13/Ethernet50/1,create,,present,present,PASS
+interface,DC-DAL1/dal1-leaf-13/Management1,create,,present,present,PASS
+ip_address,10.10.0.40/24,create,,present,present,PASS
+ip_address,10.20.0.40/24,create,,not applied,rejected,REJECTED
+ip_address,10.20.1.10/24,create,,present,present,PASS
+ip_address,10.30.0.40/24,create,,present,present,PASS
+ip_address,10.30.1.10/24,create,,present,present,PASS
+ip_address,10.20.0.27/24,stale,assigned_to,review/retire,DC-ATL1/atl1-fw-02/mgmt,REPORTED
+ip_address,10.30.0.18/24,stale,assigned_to,review/retire,BR-NYC1/nyc1-wlc-01/GigabitEthernet0,REPORTED
+vlan,BR-NYC1/50,create,,present,present,PASS
+vlan,DC-ATL1/200,update,name,storage-nvme,storage-nvme,PASS
+vlan,DC-DAL1/999,stale,,review/retire,,REPORTED
+prefix,10.12.0.0/24,update,status,active,active,PASS
+prefix,10.20.1.0/24,create,,present,present,PASS
+prefix,10.30.1.0/24,create,,present,present,PASS
+prefix,10.31.50.0/24,create,,present,present,PASS
+prefix,10.19.99.0/24,stale,,review/retire,,REPORTED
+cable,BR-NYC1/nyc1-acc-07/TenGigabitEthernet1/1/1 <> BR-NYC1/nyc1-bfw-01/port8,create,,present,present,PASS
+cable,DC-ATL1/atl1-lab-sw01/TenGigabitEthernet1/1/1 <> DC-ATL1/atl1-leaf-12/Ethernet1,create,,not applied,rejected,REJECTED
+cable,DC-DAL1/dal1-leaf-02/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet14/1,blocked,conflicts_with,retire conflict first,DC-DAL1/dal1-leaf-02/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet2/1,BLOCKED
+cable,DC-DAL1/dal1-leaf-13/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet13/1,create,,present,present,PASS
+cable,DC-DAL1/dal1-leaf-13/Ethernet50/1 <> DC-DAL1/dal1-spine-02/Ethernet13/1,create,,present,present,PASS
+cable,BR-NYC1/nyc1-acc-06/TenGigabitEthernet1/1/1 <> BR-NYC1/nyc1-bfw-01/port7,stale,,review/retire,,REPORTED
+cable,DC-ATL1/atl1-leaf-07/Ethernet49/1 <> DC-ATL1/atl1-spine-01/Ethernet7/1,stale,,review/retire,,REPORTED
+cable,DC-ATL1/atl1-leaf-07/Ethernet50/1 <> DC-ATL1/atl1-spine-02/Ethernet7/1,stale,,review/retire,,REPORTED
+cable,DC-DAL1/dal1-leaf-02/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet2/1,stale,,review/retire,,REPORTED
+all,*,sweep,,0 approved objects drifting,0 objects drifting,PASS

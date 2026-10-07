@@ -84,6 +84,62 @@
     {
      "name": "Ethernet2/1",
      "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet3/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet4/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet5/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet6/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet7/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet8/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet9/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet10/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet11/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet12/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet13/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet14/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet15/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet16/1",
+     "type": "100gbase-x-qsfp28"
     }
    ]
   },
@@ -108,6 +164,62 @@
     },
     {
      "name": "Ethernet2/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet3/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet4/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet5/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet6/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet7/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet8/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet9/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet10/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet11/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet12/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet13/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet14/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet15/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet16/1",
      "type": "100gbase-x-qsfp28"
     }
    ]
@@ -134,6 +246,10 @@
     {
      "name": "Ethernet49/1",
      "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet50/1",
+     "type": "100gbase-x-qsfp28"
     }
    ]
   },
@@ -158,6 +274,10 @@
     },
     {
      "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet50/1",
      "type": "100gbase-x-qsfp28"
     }
    ]
@@ -184,6 +304,10 @@
     {
      "name": "Ethernet49/1",
      "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet50/1",
+     "type": "100gbase-x-qsfp28"
     }
    ]
   },
@@ -208,6 +332,10 @@
     },
     {
      "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet50/1",
      "type": "100gbase-x-qsfp28"
     }
    ]
@@ -234,6 +362,10 @@
     {
      "name": "Ethernet49/1",
      "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet50/1",
+     "type": "100gbase-x-qsfp28"
     }
    ]
   },
@@ -258,6 +390,10 @@
     },
     {
      "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet50/1",
      "type": "100gbase-x-qsfp28"
     }
    ]
@@ -284,6 +420,10 @@
     {
      "name": "Ethernet49/1",
      "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet50/1",
+     "type": "100gbase-x-qsfp28"
     }
    ]
   },
@@ -308,6 +448,10 @@
     },
     {
      "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet50/1",
      "type": "100gbase-x-qsfp28"
     }
    ]
@@ -334,6 +478,10 @@
     {
      "name": "Ethernet49/1",
      "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet50/1",
+     "type": "100gbase-x-qsfp28"
     }
    ]
   },
@@ -358,6 +506,10 @@
     },
     {
      "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet50/1",
      "type": "100gbase-x-qsfp28"
     }
    ]
@@ -384,6 +536,10 @@
     {
      "name": "Ethernet49/1",
      "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet50/1",
+     "type": "100gbase-x-qsfp28"
     }
    ]
   },
@@ -408,6 +564,10 @@
     },
     {
      "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet50/1",
      "type": "100gbase-x-qsfp28"
     }
    ]
@@ -586,6 +746,62 @@
     {
      "name": "Ethernet2/1",
      "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet3/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet4/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet5/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet6/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet7/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet8/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet9/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet10/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet11/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet12/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet13/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet14/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet15/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet16/1",
+     "type": "100gbase-x-qsfp28"
     }
    ]
   },
@@ -610,6 +826,62 @@
     },
     {
      "name": "Ethernet2/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet3/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet4/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet5/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet6/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet7/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet8/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet9/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet10/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet11/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet12/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet13/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet14/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet15/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet16/1",
      "type": "100gbase-x-qsfp28"
     }
    ]
@@ -636,6 +908,10 @@
     {
      "name": "Ethernet49/1",
      "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet50/1",
+     "type": "100gbase-x-qsfp28"
     }
    ]
   },
@@ -660,6 +936,10 @@
     },
     {
      "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet50/1",
      "type": "100gbase-x-qsfp28"
     }
    ]
@@ -686,6 +966,10 @@
     {
      "name": "Ethernet49/1",
      "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet50/1",
+     "type": "100gbase-x-qsfp28"
     }
    ]
   },
@@ -710,6 +994,10 @@
     },
     {
      "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet50/1",
      "type": "100gbase-x-qsfp28"
     }
    ]
@@ -736,6 +1024,10 @@
     {
      "name": "Ethernet49/1",
      "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet50/1",
+     "type": "100gbase-x-qsfp28"
     }
    ]
   },
@@ -760,6 +1052,10 @@
     },
     {
      "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet50/1",
      "type": "100gbase-x-qsfp28"
     }
    ]
@@ -786,6 +1082,10 @@
     {
      "name": "Ethernet49/1",
      "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet50/1",
+     "type": "100gbase-x-qsfp28"
     }
    ]
   },
@@ -810,6 +1110,10 @@
     },
     {
      "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet50/1",
      "type": "100gbase-x-qsfp28"
     }
    ]
@@ -836,6 +1140,10 @@
     {
      "name": "Ethernet49/1",
      "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet50/1",
+     "type": "100gbase-x-qsfp28"
     }
    ]
   },
@@ -860,6 +1168,10 @@
     },
     {
      "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet50/1",
      "type": "100gbase-x-qsfp28"
     }
    ]
@@ -886,6 +1198,10 @@
     {
      "name": "Ethernet49/1",
      "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet50/1",
+     "type": "100gbase-x-qsfp28"
     }
    ]
   },
@@ -910,6 +1226,10 @@
     },
     {
      "name": "Ethernet49/1",
+     "type": "100gbase-x-qsfp28"
+    },
+    {
+     "name": "Ethernet50/1",
      "type": "100gbase-x-qsfp28"
     }
    ]
@@ -1049,6 +1369,30 @@
     {
      "name": "port2",
      "type": "1000base-t"
+    },
+    {
+     "name": "port3",
+     "type": "1000base-t"
+    },
+    {
+     "name": "port4",
+     "type": "1000base-t"
+    },
+    {
+     "name": "port5",
+     "type": "1000base-t"
+    },
+    {
+     "name": "port6",
+     "type": "1000base-t"
+    },
+    {
+     "name": "port7",
+     "type": "1000base-t"
+    },
+    {
+     "name": "port8",
+     "type": "1000base-t"
     }
    ]
   },
@@ -1070,6 +1414,10 @@
     {
      "name": "TenGigabitEthernet1/1/1",
      "type": "10gbase-x-sfpp"
+    },
+    {
+     "name": "GigabitEthernet1/0/48",
+     "type": "1000base-t"
     }
    ]
   },
@@ -1091,6 +1439,10 @@
     {
      "name": "TenGigabitEthernet1/1/1",
      "type": "10gbase-x-sfpp"
+    },
+    {
+     "name": "GigabitEthernet1/0/48",
+     "type": "1000base-t"
     }
    ]
   },
@@ -1112,6 +1464,10 @@
     {
      "name": "TenGigabitEthernet1/1/1",
      "type": "10gbase-x-sfpp"
+    },
+    {
+     "name": "GigabitEthernet1/0/48",
+     "type": "1000base-t"
     }
    ]
   },
@@ -1133,6 +1489,10 @@
     {
      "name": "TenGigabitEthernet1/1/1",
      "type": "10gbase-x-sfpp"
+    },
+    {
+     "name": "GigabitEthernet1/0/48",
+     "type": "1000base-t"
     }
    ]
   },
@@ -1154,6 +1514,10 @@
     {
      "name": "TenGigabitEthernet1/1/1",
      "type": "10gbase-x-sfpp"
+    },
+    {
+     "name": "GigabitEthernet1/0/48",
+     "type": "1000base-t"
     }
    ]
   },
@@ -1175,6 +1539,10 @@
     {
      "name": "TenGigabitEthernet1/1/1",
      "type": "10gbase-x-sfpp"
+    },
+    {
+     "name": "GigabitEthernet1/0/48",
+     "type": "1000base-t"
     }
    ]
   },
@@ -1219,6 +1587,990 @@
      "type": "10gbase-x-sfpp"
     }
    ]
+  }
+ ],
+ "vlans": [
+  {
+   "site": "DC-DAL1",
+   "vid": 10,
+   "name": "mgmt",
+   "status": "active"
+  },
+  {
+   "site": "DC-DAL1",
+   "vid": 100,
+   "name": "servers",
+   "status": "active"
+  },
+  {
+   "site": "DC-DAL1",
+   "vid": 200,
+   "name": "storage",
+   "status": "active"
+  },
+  {
+   "site": "DC-ATL1",
+   "vid": 10,
+   "name": "mgmt",
+   "status": "active"
+  },
+  {
+   "site": "DC-ATL1",
+   "vid": 100,
+   "name": "servers",
+   "status": "active"
+  },
+  {
+   "site": "DC-ATL1",
+   "vid": 200,
+   "name": "storage",
+   "status": "active"
+  },
+  {
+   "site": "BR-NYC1",
+   "vid": 10,
+   "name": "mgmt",
+   "status": "active"
+  },
+  {
+   "site": "BR-NYC1",
+   "vid": 20,
+   "name": "users",
+   "status": "active"
+  },
+  {
+   "site": "BR-NYC1",
+   "vid": 30,
+   "name": "voice",
+   "status": "active"
+  },
+  {
+   "site": "BR-NYC1",
+   "vid": 40,
+   "name": "guest",
+   "status": "active"
+  },
+  {
+   "site": "DC-DAL1",
+   "vid": 999,
+   "name": "legacy-voice",
+   "status": "active"
+  }
+ ],
+ "prefixes": [
+  {
+   "prefix": "10.10.0.0/24",
+   "site": "DC-DAL1",
+   "vlan": 10,
+   "status": "active"
+  },
+  {
+   "prefix": "10.11.0.0/22",
+   "site": "DC-DAL1",
+   "vlan": 100,
+   "status": "active"
+  },
+  {
+   "prefix": "10.12.0.0/24",
+   "site": "DC-DAL1",
+   "vlan": 200,
+   "status": "reserved"
+  },
+  {
+   "prefix": "10.255.1.0/24",
+   "site": "DC-DAL1",
+   "vlan": null,
+   "status": "container"
+  },
+  {
+   "prefix": "10.20.0.0/24",
+   "site": "DC-ATL1",
+   "vlan": 10,
+   "status": "active"
+  },
+  {
+   "prefix": "10.21.0.0/22",
+   "site": "DC-ATL1",
+   "vlan": 100,
+   "status": "active"
+  },
+  {
+   "prefix": "10.22.0.0/24",
+   "site": "DC-ATL1",
+   "vlan": 200,
+   "status": "active"
+  },
+  {
+   "prefix": "10.255.2.0/24",
+   "site": "DC-ATL1",
+   "vlan": null,
+   "status": "container"
+  },
+  {
+   "prefix": "10.30.0.0/24",
+   "site": "BR-NYC1",
+   "vlan": 10,
+   "status": "active"
+  },
+  {
+   "prefix": "10.31.20.0/24",
+   "site": "BR-NYC1",
+   "vlan": 20,
+   "status": "active"
+  },
+  {
+   "prefix": "10.31.30.0/24",
+   "site": "BR-NYC1",
+   "vlan": 30,
+   "status": "active"
+  },
+  {
+   "prefix": "10.31.40.0/24",
+   "site": "BR-NYC1",
+   "vlan": 40,
+   "status": "active"
+  },
+  {
+   "prefix": "10.255.3.0/24",
+   "site": "BR-NYC1",
+   "vlan": null,
+   "status": "container"
+  },
+  {
+   "prefix": "10.19.99.0/24",
+   "site": "DC-DAL1",
+   "vlan": 999,
+   "status": "active"
+  }
+ ],
+ "cables": [
+  {
+   "a": {
+    "site": "DC-DAL1",
+    "device": "dal1-leaf-01",
+    "interface": "Ethernet49/1"
+   },
+   "b": {
+    "site": "DC-DAL1",
+    "device": "dal1-spine-01",
+    "interface": "Ethernet1/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-DAL1",
+    "device": "dal1-leaf-01",
+    "interface": "Ethernet50/1"
+   },
+   "b": {
+    "site": "DC-DAL1",
+    "device": "dal1-spine-02",
+    "interface": "Ethernet1/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-DAL1",
+    "device": "dal1-leaf-02",
+    "interface": "Ethernet49/1"
+   },
+   "b": {
+    "site": "DC-DAL1",
+    "device": "dal1-spine-01",
+    "interface": "Ethernet2/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-DAL1",
+    "device": "dal1-leaf-02",
+    "interface": "Ethernet50/1"
+   },
+   "b": {
+    "site": "DC-DAL1",
+    "device": "dal1-spine-02",
+    "interface": "Ethernet2/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-DAL1",
+    "device": "dal1-leaf-03",
+    "interface": "Ethernet49/1"
+   },
+   "b": {
+    "site": "DC-DAL1",
+    "device": "dal1-spine-01",
+    "interface": "Ethernet3/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-DAL1",
+    "device": "dal1-leaf-03",
+    "interface": "Ethernet50/1"
+   },
+   "b": {
+    "site": "DC-DAL1",
+    "device": "dal1-spine-02",
+    "interface": "Ethernet3/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-DAL1",
+    "device": "dal1-leaf-04",
+    "interface": "Ethernet49/1"
+   },
+   "b": {
+    "site": "DC-DAL1",
+    "device": "dal1-spine-01",
+    "interface": "Ethernet4/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-DAL1",
+    "device": "dal1-leaf-04",
+    "interface": "Ethernet50/1"
+   },
+   "b": {
+    "site": "DC-DAL1",
+    "device": "dal1-spine-02",
+    "interface": "Ethernet4/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-DAL1",
+    "device": "dal1-leaf-05",
+    "interface": "Ethernet49/1"
+   },
+   "b": {
+    "site": "DC-DAL1",
+    "device": "dal1-spine-01",
+    "interface": "Ethernet5/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-DAL1",
+    "device": "dal1-leaf-05",
+    "interface": "Ethernet50/1"
+   },
+   "b": {
+    "site": "DC-DAL1",
+    "device": "dal1-spine-02",
+    "interface": "Ethernet5/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-DAL1",
+    "device": "dal1-leaf-06",
+    "interface": "Ethernet49/1"
+   },
+   "b": {
+    "site": "DC-DAL1",
+    "device": "dal1-spine-01",
+    "interface": "Ethernet6/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-DAL1",
+    "device": "dal1-leaf-06",
+    "interface": "Ethernet50/1"
+   },
+   "b": {
+    "site": "DC-DAL1",
+    "device": "dal1-spine-02",
+    "interface": "Ethernet6/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-DAL1",
+    "device": "dal1-leaf-07",
+    "interface": "Ethernet49/1"
+   },
+   "b": {
+    "site": "DC-DAL1",
+    "device": "dal1-spine-01",
+    "interface": "Ethernet7/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-DAL1",
+    "device": "dal1-leaf-07",
+    "interface": "Ethernet50/1"
+   },
+   "b": {
+    "site": "DC-DAL1",
+    "device": "dal1-spine-02",
+    "interface": "Ethernet7/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-DAL1",
+    "device": "dal1-leaf-08",
+    "interface": "Ethernet49/1"
+   },
+   "b": {
+    "site": "DC-DAL1",
+    "device": "dal1-spine-01",
+    "interface": "Ethernet8/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-DAL1",
+    "device": "dal1-leaf-08",
+    "interface": "Ethernet50/1"
+   },
+   "b": {
+    "site": "DC-DAL1",
+    "device": "dal1-spine-02",
+    "interface": "Ethernet8/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-DAL1",
+    "device": "dal1-leaf-09",
+    "interface": "Ethernet49/1"
+   },
+   "b": {
+    "site": "DC-DAL1",
+    "device": "dal1-spine-01",
+    "interface": "Ethernet9/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-DAL1",
+    "device": "dal1-leaf-09",
+    "interface": "Ethernet50/1"
+   },
+   "b": {
+    "site": "DC-DAL1",
+    "device": "dal1-spine-02",
+    "interface": "Ethernet9/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-DAL1",
+    "device": "dal1-leaf-10",
+    "interface": "Ethernet49/1"
+   },
+   "b": {
+    "site": "DC-DAL1",
+    "device": "dal1-spine-01",
+    "interface": "Ethernet10/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-DAL1",
+    "device": "dal1-leaf-10",
+    "interface": "Ethernet50/1"
+   },
+   "b": {
+    "site": "DC-DAL1",
+    "device": "dal1-spine-02",
+    "interface": "Ethernet10/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-DAL1",
+    "device": "dal1-leaf-11",
+    "interface": "Ethernet49/1"
+   },
+   "b": {
+    "site": "DC-DAL1",
+    "device": "dal1-spine-01",
+    "interface": "Ethernet11/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-DAL1",
+    "device": "dal1-leaf-11",
+    "interface": "Ethernet50/1"
+   },
+   "b": {
+    "site": "DC-DAL1",
+    "device": "dal1-spine-02",
+    "interface": "Ethernet11/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-DAL1",
+    "device": "dal1-leaf-12",
+    "interface": "Ethernet49/1"
+   },
+   "b": {
+    "site": "DC-DAL1",
+    "device": "dal1-spine-01",
+    "interface": "Ethernet12/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-DAL1",
+    "device": "dal1-leaf-12",
+    "interface": "Ethernet50/1"
+   },
+   "b": {
+    "site": "DC-DAL1",
+    "device": "dal1-spine-02",
+    "interface": "Ethernet12/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-DAL1",
+    "device": "dal1-core-01",
+    "interface": "et-0/0/0"
+   },
+   "b": {
+    "site": "DC-DAL1",
+    "device": "dal1-spine-01",
+    "interface": "Ethernet15/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-DAL1",
+    "device": "dal1-core-01",
+    "interface": "et-0/0/1"
+   },
+   "b": {
+    "site": "DC-DAL1",
+    "device": "dal1-spine-02",
+    "interface": "Ethernet16/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-DAL1",
+    "device": "dal1-core-02",
+    "interface": "et-0/0/0"
+   },
+   "b": {
+    "site": "DC-DAL1",
+    "device": "dal1-spine-02",
+    "interface": "Ethernet15/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-DAL1",
+    "device": "dal1-core-02",
+    "interface": "et-0/0/1"
+   },
+   "b": {
+    "site": "DC-DAL1",
+    "device": "dal1-spine-01",
+    "interface": "Ethernet16/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-DAL1",
+    "device": "dal1-fw-01",
+    "interface": "ethernet1/1"
+   },
+   "b": {
+    "site": "DC-DAL1",
+    "device": "dal1-leaf-01",
+    "interface": "Ethernet1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-DAL1",
+    "device": "dal1-fw-02",
+    "interface": "ethernet1/1"
+   },
+   "b": {
+    "site": "DC-DAL1",
+    "device": "dal1-leaf-02",
+    "interface": "Ethernet1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-ATL1",
+    "device": "atl1-leaf-01",
+    "interface": "Ethernet49/1"
+   },
+   "b": {
+    "site": "DC-ATL1",
+    "device": "atl1-spine-01",
+    "interface": "Ethernet1/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-ATL1",
+    "device": "atl1-leaf-01",
+    "interface": "Ethernet50/1"
+   },
+   "b": {
+    "site": "DC-ATL1",
+    "device": "atl1-spine-02",
+    "interface": "Ethernet1/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-ATL1",
+    "device": "atl1-leaf-02",
+    "interface": "Ethernet49/1"
+   },
+   "b": {
+    "site": "DC-ATL1",
+    "device": "atl1-spine-01",
+    "interface": "Ethernet2/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-ATL1",
+    "device": "atl1-leaf-02",
+    "interface": "Ethernet50/1"
+   },
+   "b": {
+    "site": "DC-ATL1",
+    "device": "atl1-spine-02",
+    "interface": "Ethernet2/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-ATL1",
+    "device": "atl1-leaf-03",
+    "interface": "Ethernet49/1"
+   },
+   "b": {
+    "site": "DC-ATL1",
+    "device": "atl1-spine-01",
+    "interface": "Ethernet3/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-ATL1",
+    "device": "atl1-leaf-03",
+    "interface": "Ethernet50/1"
+   },
+   "b": {
+    "site": "DC-ATL1",
+    "device": "atl1-spine-02",
+    "interface": "Ethernet3/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-ATL1",
+    "device": "atl1-leaf-04",
+    "interface": "Ethernet49/1"
+   },
+   "b": {
+    "site": "DC-ATL1",
+    "device": "atl1-spine-01",
+    "interface": "Ethernet4/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-ATL1",
+    "device": "atl1-leaf-04",
+    "interface": "Ethernet50/1"
+   },
+   "b": {
+    "site": "DC-ATL1",
+    "device": "atl1-spine-02",
+    "interface": "Ethernet4/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-ATL1",
+    "device": "atl1-leaf-05",
+    "interface": "Ethernet49/1"
+   },
+   "b": {
+    "site": "DC-ATL1",
+    "device": "atl1-spine-01",
+    "interface": "Ethernet5/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-ATL1",
+    "device": "atl1-leaf-05",
+    "interface": "Ethernet50/1"
+   },
+   "b": {
+    "site": "DC-ATL1",
+    "device": "atl1-spine-02",
+    "interface": "Ethernet5/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-ATL1",
+    "device": "atl1-leaf-06",
+    "interface": "Ethernet49/1"
+   },
+   "b": {
+    "site": "DC-ATL1",
+    "device": "atl1-spine-01",
+    "interface": "Ethernet6/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-ATL1",
+    "device": "atl1-leaf-06",
+    "interface": "Ethernet50/1"
+   },
+   "b": {
+    "site": "DC-ATL1",
+    "device": "atl1-spine-02",
+    "interface": "Ethernet6/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-ATL1",
+    "device": "atl1-leaf-07",
+    "interface": "Ethernet49/1"
+   },
+   "b": {
+    "site": "DC-ATL1",
+    "device": "atl1-spine-01",
+    "interface": "Ethernet7/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-ATL1",
+    "device": "atl1-leaf-07",
+    "interface": "Ethernet50/1"
+   },
+   "b": {
+    "site": "DC-ATL1",
+    "device": "atl1-spine-02",
+    "interface": "Ethernet7/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-ATL1",
+    "device": "atl1-leaf-08",
+    "interface": "Ethernet49/1"
+   },
+   "b": {
+    "site": "DC-ATL1",
+    "device": "atl1-spine-01",
+    "interface": "Ethernet8/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-ATL1",
+    "device": "atl1-leaf-08",
+    "interface": "Ethernet50/1"
+   },
+   "b": {
+    "site": "DC-ATL1",
+    "device": "atl1-spine-02",
+    "interface": "Ethernet8/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-ATL1",
+    "device": "atl1-leaf-09",
+    "interface": "Ethernet49/1"
+   },
+   "b": {
+    "site": "DC-ATL1",
+    "device": "atl1-spine-01",
+    "interface": "Ethernet9/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-ATL1",
+    "device": "atl1-leaf-09",
+    "interface": "Ethernet50/1"
+   },
+   "b": {
+    "site": "DC-ATL1",
+    "device": "atl1-spine-02",
+    "interface": "Ethernet9/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-ATL1",
+    "device": "atl1-leaf-10",
+    "interface": "Ethernet49/1"
+   },
+   "b": {
+    "site": "DC-ATL1",
+    "device": "atl1-spine-01",
+    "interface": "Ethernet10/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-ATL1",
+    "device": "atl1-leaf-10",
+    "interface": "Ethernet50/1"
+   },
+   "b": {
+    "site": "DC-ATL1",
+    "device": "atl1-spine-02",
+    "interface": "Ethernet10/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-ATL1",
+    "device": "atl1-leaf-11",
+    "interface": "Ethernet49/1"
+   },
+   "b": {
+    "site": "DC-ATL1",
+    "device": "atl1-spine-01",
+    "interface": "Ethernet11/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-ATL1",
+    "device": "atl1-leaf-11",
+    "interface": "Ethernet50/1"
+   },
+   "b": {
+    "site": "DC-ATL1",
+    "device": "atl1-spine-02",
+    "interface": "Ethernet11/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-ATL1",
+    "device": "atl1-leaf-12",
+    "interface": "Ethernet49/1"
+   },
+   "b": {
+    "site": "DC-ATL1",
+    "device": "atl1-spine-01",
+    "interface": "Ethernet12/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-ATL1",
+    "device": "atl1-leaf-12",
+    "interface": "Ethernet50/1"
+   },
+   "b": {
+    "site": "DC-ATL1",
+    "device": "atl1-spine-02",
+    "interface": "Ethernet12/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-ATL1",
+    "device": "atl1-core-01",
+    "interface": "et-0/0/0"
+   },
+   "b": {
+    "site": "DC-ATL1",
+    "device": "atl1-spine-01",
+    "interface": "Ethernet15/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-ATL1",
+    "device": "atl1-core-01",
+    "interface": "et-0/0/1"
+   },
+   "b": {
+    "site": "DC-ATL1",
+    "device": "atl1-spine-02",
+    "interface": "Ethernet16/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-ATL1",
+    "device": "atl1-core-02",
+    "interface": "et-0/0/0"
+   },
+   "b": {
+    "site": "DC-ATL1",
+    "device": "atl1-spine-02",
+    "interface": "Ethernet15/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-ATL1",
+    "device": "atl1-core-02",
+    "interface": "et-0/0/1"
+   },
+   "b": {
+    "site": "DC-ATL1",
+    "device": "atl1-spine-01",
+    "interface": "Ethernet16/1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-ATL1",
+    "device": "atl1-fw-01",
+    "interface": "ethernet1/1"
+   },
+   "b": {
+    "site": "DC-ATL1",
+    "device": "atl1-leaf-01",
+    "interface": "Ethernet1"
+   }
+  },
+  {
+   "a": {
+    "site": "DC-ATL1",
+    "device": "atl1-fw-02",
+    "interface": "ethernet1/1"
+   },
+   "b": {
+    "site": "DC-ATL1",
+    "device": "atl1-leaf-02",
+    "interface": "Ethernet1"
+   }
+  },
+  {
+   "a": {
+    "site": "BR-NYC1",
+    "device": "nyc1-rtr-01",
+    "interface": "TenGigabitEthernet0/1/0"
+   },
+   "b": {
+    "site": "BR-NYC1",
+    "device": "nyc1-bfw-01",
+    "interface": "port1"
+   }
+  },
+  {
+   "a": {
+    "site": "BR-NYC1",
+    "device": "nyc1-acc-01",
+    "interface": "TenGigabitEthernet1/1/1"
+   },
+   "b": {
+    "site": "BR-NYC1",
+    "device": "nyc1-bfw-01",
+    "interface": "port2"
+   }
+  },
+  {
+   "a": {
+    "site": "BR-NYC1",
+    "device": "nyc1-acc-02",
+    "interface": "TenGigabitEthernet1/1/1"
+   },
+   "b": {
+    "site": "BR-NYC1",
+    "device": "nyc1-bfw-01",
+    "interface": "port3"
+   }
+  },
+  {
+   "a": {
+    "site": "BR-NYC1",
+    "device": "nyc1-acc-03",
+    "interface": "TenGigabitEthernet1/1/1"
+   },
+   "b": {
+    "site": "BR-NYC1",
+    "device": "nyc1-bfw-01",
+    "interface": "port4"
+   }
+  },
+  {
+   "a": {
+    "site": "BR-NYC1",
+    "device": "nyc1-acc-04",
+    "interface": "TenGigabitEthernet1/1/1"
+   },
+   "b": {
+    "site": "BR-NYC1",
+    "device": "nyc1-bfw-01",
+    "interface": "port5"
+   }
+  },
+  {
+   "a": {
+    "site": "BR-NYC1",
+    "device": "nyc1-acc-05",
+    "interface": "TenGigabitEthernet1/1/1"
+   },
+   "b": {
+    "site": "BR-NYC1",
+    "device": "nyc1-bfw-01",
+    "interface": "port6"
+   }
+  },
+  {
+   "a": {
+    "site": "BR-NYC1",
+    "device": "nyc1-acc-06",
+    "interface": "TenGigabitEthernet1/1/1"
+   },
+   "b": {
+    "site": "BR-NYC1",
+    "device": "nyc1-bfw-01",
+    "interface": "port7"
+   }
+  },
+  {
+   "a": {
+    "site": "BR-NYC1",
+    "device": "nyc1-wlc-01",
+    "interface": "TenGigabitEthernet0/1/0"
+   },
+   "b": {
+    "site": "BR-NYC1",
+    "device": "nyc1-acc-01",
+    "interface": "GigabitEthernet1/0/48"
+   }
+  },
+  {
+   "a": {
+    "site": "BR-NYC1",
+    "device": "nyc1-wlc-02",
+    "interface": "TenGigabitEthernet0/1/0"
+   },
+   "b": {
+    "site": "BR-NYC1",
+    "device": "nyc1-acc-02",
+    "interface": "GigabitEthernet1/0/48"
+   }
   }
  ]
 }

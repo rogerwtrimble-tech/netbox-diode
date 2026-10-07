@@ -1,2 +1,2 @@
 object_type,key,action,field,expected,actual,result
-all,*,sweep,,0 objects drifting,0 objects drifting,PASS
+all,*,sweep,,0 approved objects drifting,0 objects drifting,PASS

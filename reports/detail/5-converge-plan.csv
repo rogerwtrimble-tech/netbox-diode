@@ -1,0 +1,8 @@
+object_type,key,action,field,netbox_before,source_value
+device,DC-ATL1/atl1-lab-sw01,create,,,
+interface,DC-ATL1/atl1-lab-sw01/GigabitEthernet0/0,create,,,
+interface,DC-ATL1/atl1-lab-sw01/GigabitEthernet1/0/48,create,,,
+interface,DC-ATL1/atl1-lab-sw01/TenGigabitEthernet1/1/1,create,,,
+ip_address,10.20.0.40/24,create,,,
+cable,DC-ATL1/atl1-lab-sw01/TenGigabitEthernet1/1/1 <> DC-ATL1/atl1-leaf-12/Ethernet1,create,,,
+cable,DC-DAL1/dal1-leaf-02/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet14/1,create,,,

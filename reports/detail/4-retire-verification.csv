@@ -1,0 +1,15 @@
+object_type,key,action,field,expected,actual,result
+cable,BR-NYC1/nyc1-acc-06/TenGigabitEthernet1/1/1 <> BR-NYC1/nyc1-bfw-01/port7,retire,,deleted,deleted,PASS
+cable,DC-ATL1/atl1-leaf-07/Ethernet49/1 <> DC-ATL1/atl1-spine-01/Ethernet7/1,retire,,deleted,deleted,PASS
+cable,DC-ATL1/atl1-leaf-07/Ethernet50/1 <> DC-ATL1/atl1-spine-02/Ethernet7/1,retire,,deleted,deleted,PASS
+cable,DC-DAL1/dal1-leaf-02/Ethernet49/1 <> DC-DAL1/dal1-spine-01/Ethernet2/1,retire,,deleted,deleted,PASS
+ip_address,10.10.0.29/24,retire,,deleted,deleted,PASS
+ip_address,10.20.0.20/24,retire,,deleted,deleted,PASS
+ip_address,10.20.0.27/24,retire,,deleted,deleted,PASS
+ip_address,10.30.0.17/24,retire,,deleted,deleted,PASS
+ip_address,10.30.0.18/24,retire,,deleted,deleted,PASS
+prefix,10.19.99.0/24,retire,,deleted,deleted,PASS
+vlan,DC-DAL1/999,retire,,deleted,deleted,PASS
+device,BR-NYC1/nyc1-acc-06,retire,,deleted,deleted,PASS
+device,DC-ATL1/atl1-leaf-07,retire,,deleted,deleted,PASS
+device,DC-DAL1/dal1-oob-02,retire,,deleted,deleted,PASS

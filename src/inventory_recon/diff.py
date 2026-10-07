@@ -6,13 +6,21 @@ Pure functions, no I/O, so the reconciliation rules are fully unit-tested.
 from __future__ import annotations
 
 from collections import Counter
+from collections.abc import Callable, Mapping
 from dataclasses import dataclass
 from enum import StrEnum
+from typing import Any
 
-from .models import DeviceState, InventoryState
+from .models import STALE, DeviceState, InventoryState
 
-DEVICE_FIELDS = ("role", "manufacturer", "model", "platform", "serial", "status")
-INTERFACE_FIELDS = ("type", "enabled")
+FIELDS: dict[str, tuple[str, ...]] = {
+    "device": ("role", "manufacturer", "model", "platform", "serial", "status", "recon_state"),
+    "interface": ("type", "enabled"),
+    "ip_address": ("interface_key",),
+    "vlan": ("name", "status"),
+    "prefix": ("site", "vlan", "status"),
+    "cable": ("status",),
+}
 
 
 class Action(StrEnum):
@@ -21,7 +29,8 @@ class Action(StrEnum):
     CREATE = "create"  # in source, not in NetBox -> Diode creates it
     UPDATE = "update"  # in both, attribute drift -> Diode updates it
     UNCHANGED = "unchanged"  # in both, identical
-    STALE = "stale"  # in NetBox (in scope), not in source -> flagged/reported, never deleted
+    STALE = "stale"  # in NetBox (in scope), not in source -> flagged/reported, retired only on approval
+    BLOCKED = "blocked"  # cannot be applied until a conflicting stale object is retired
 
 
 class ObjectType(StrEnum):
@@ -30,11 +39,18 @@ class ObjectType(StrEnum):
     DEVICE = "device"
     INTERFACE = "interface"
     IP_ADDRESS = "ip_address"
+    VLAN = "vlan"
+    PREFIX = "prefix"
+    CABLE = "cable"
 
 
 @dataclass(frozen=True, slots=True)
 class Change:
-    """One planned (or observed) reconciliation item; UPDATE has one row per field."""
+    """One planned (or observed) reconciliation item; UPDATE has one row per field.
+
+    ``group`` is the unit of review and of apply: a device with its interfaces and
+    IPs, or a single VLAN, prefix or cable.
+    """
 
     object_type: ObjectType
     key: str
@@ -42,6 +58,7 @@ class Change:
     field: str = ""
     before: str = ""
     after: str = ""
+    group: str = ""
 
 
 @dataclass(frozen=True, slots=True)
@@ -65,17 +82,9 @@ class Plan:
         """Changes that still require a write (CREATE/UPDATE)."""
         return [c for c in self.changes if c.action in (Action.CREATE, Action.UPDATE)]
 
-    def pending_device_keys(self) -> set[str]:
-        """Device keys owning any pending change (used to re-ingest stragglers)."""
-        keys: set[str] = set()
-        for c in self.pending:
-            if c.object_type == ObjectType.DEVICE:
-                keys.add(c.key)
-            elif c.object_type == ObjectType.INTERFACE:
-                keys.add(device_key_of(c.key))
-            elif c.after:
-                keys.add(device_key_of(c.after))
-        return keys
+    def groups(self, *actions: Action) -> set[str]:
+        """Groups owning at least one change with one of ``actions``."""
+        return {c.group for c in self.changes if c.action in actions}
 
 
 def device_key_of(interface_key: str) -> str:
@@ -83,88 +92,128 @@ def device_key_of(interface_key: str) -> str:
     return "/".join(interface_key.split("/", 2)[:2])
 
 
+def group_of(object_type: ObjectType, key: str, interface_key: str | None = None) -> str:
+    """Review/apply unit for an object."""
+    if object_type == ObjectType.DEVICE:
+        return f"device:{key}"
+    if object_type == ObjectType.INTERFACE:
+        return f"device:{device_key_of(key)}"
+    if object_type == ObjectType.IP_ADDRESS:
+        return f"device:{device_key_of(interface_key)}" if interface_key else f"ip_address:{key}"
+    return f"{object_type}:{key}"
+
+
 def _fmt(value: object) -> str:
     return "" if value is None else str(value).lower() if isinstance(value, bool) else str(value)
+
+
+def _compare(
+    object_type: ObjectType,
+    desired: Mapping[str, Any],
+    actual: Mapping[str, Any],
+    stale_if: Callable[[Any], bool],
+    group: Callable[[str, Any], str],
+) -> list[Change]:
+    """Generic keyed comparison: create / update (per field) / unchanged / stale."""
+    out: list[Change] = []
+    fields = FIELDS[object_type]
+    for key, want in sorted(desired.items()):
+        have = actual.get(key)
+        g = group(key, want)
+        if have is None:
+            out.append(Change(object_type, key, Action.CREATE, group=g))
+            continue
+        drift = [
+            Change(object_type, key, Action.UPDATE, f, _fmt(getattr(have, f)), _fmt(getattr(want, f)), g)
+            for f in fields
+            if getattr(want, f) is not None and getattr(have, f) != getattr(want, f)
+        ]
+        out.extend(drift or [Change(object_type, key, Action.UNCHANGED, group=g)])
+    out.extend(
+        Change(object_type, key, Action.STALE, group=group(key, have))
+        for key, have in sorted(actual.items())
+        if key not in desired and stale_if(have)
+    )
+    return out
 
 
 def compute_plan(desired: InventoryState, actual: InventoryState, scope_sites: frozenset[str]) -> Plan:
     """Compute the reconciliation plan.
 
-    Scope: only NetBox objects in ``scope_sites`` can be STALE, so one source
-    never flags inventory owned by another site/source.
+    Scope: only NetBox objects in ``scope_sites`` can be STALE, so one source never
+    flags inventory owned by another site/source. Interfaces and IPs can only be
+    stale on devices the source still reports.
     """
-    changes: list[Change] = []
-    in_scope = {k: d for k, d in actual.devices.items() if d.site in scope_sites}
+    owned = set(desired.devices)
+    in_scope = {k for k, d in actual.devices.items() if d.site in scope_sites}
 
-    # Devices
-    for key, want in sorted(desired.devices.items()):
-        have = actual.devices.get(key)
-        if have is None:
-            changes.append(Change(ObjectType.DEVICE, key, Action.CREATE, after=want.model))
-            continue
-        drift = [
-            Change(ObjectType.DEVICE, key, Action.UPDATE, f, _fmt(getattr(have, f)), _fmt(getattr(want, f)))
-            for f in DEVICE_FIELDS
-            if getattr(want, f) is not None and getattr(have, f) != getattr(want, f)
-        ]
-        changes.extend(drift or [Change(ObjectType.DEVICE, key, Action.UNCHANGED)])
-    stale_devices = sorted(set(in_scope) - set(desired.devices))
-    changes.extend(Change(ObjectType.DEVICE, k, Action.STALE, "status", in_scope[k].status) for k in stale_devices)
-
-    # Interfaces (stale only reported on devices the source still owns)
-    for key, want_if in sorted(desired.interfaces.items()):
-        have_if = actual.interfaces.get(key)
-        if have_if is None:
-            changes.append(Change(ObjectType.INTERFACE, key, Action.CREATE, after=want_if.type))
-            continue
-        drift = [
-            Change(
-                ObjectType.INTERFACE,
-                key,
-                Action.UPDATE,
-                f,
-                _fmt(getattr(have_if, f)),
-                _fmt(getattr(want_if, f)),
-            )
-            for f in INTERFACE_FIELDS
-            if getattr(have_if, f) != getattr(want_if, f)
-        ]
-        changes.extend(drift or [Change(ObjectType.INTERFACE, key, Action.UNCHANGED)])
-    changes.extend(
-        Change(ObjectType.INTERFACE, k, Action.STALE)
-        for k, i in sorted(actual.interfaces.items())
-        if i.device_key in desired.devices and k not in desired.interfaces
+    changes = _compare(
+        ObjectType.DEVICE,
+        desired.devices,
+        actual.devices,
+        lambda d: d.key in in_scope,
+        lambda k, _: group_of(ObjectType.DEVICE, k),
+    )
+    # Stale devices: show the current status (what flagging will change).
+    changes = [
+        Change(c.object_type, c.key, c.action, "status", actual.devices[c.key].status, group=c.group)
+        if c.action == Action.STALE
+        else c
+        for c in changes
+    ]
+    changes += _compare(
+        ObjectType.INTERFACE,
+        desired.interfaces,
+        actual.interfaces,
+        lambda i: i.device_key in owned,
+        lambda k, _: group_of(ObjectType.INTERFACE, k),
+    )
+    for c in _compare(
+        ObjectType.IP_ADDRESS,
+        desired.ips,
+        actual.ips,
+        lambda ip: bool(ip.interface_key) and device_key_of(ip.interface_key) in owned,
+        lambda k, ip: group_of(ObjectType.IP_ADDRESS, k, ip.interface_key),
+    ):
+        if c.action in (Action.UPDATE, Action.STALE):  # show where the address is assigned today
+            before = c.before if c.action == Action.UPDATE else _fmt(actual.ips[c.key].interface_key)
+            c = Change(c.object_type, c.key, c.action, "assigned_to", before, c.after, c.group)  # noqa: PLW2901
+        changes.append(c)
+    changes += _compare(
+        ObjectType.VLAN,
+        desired.vlans,
+        actual.vlans,
+        lambda v: v.site in scope_sites,
+        lambda k, _: group_of(ObjectType.VLAN, k),
+    )
+    changes += _compare(
+        ObjectType.PREFIX,
+        desired.prefixes,
+        actual.prefixes,
+        lambda p: p.site in scope_sites,
+        lambda k, _: group_of(ObjectType.PREFIX, k),
     )
 
-    # IP addresses
-    for addr, want_ip in sorted(desired.ips.items()):
-        have_ip = actual.ips.get(addr)
-        if have_ip is None:
-            changes.append(
-                Change(ObjectType.IP_ADDRESS, addr, Action.CREATE, "assigned_to", "", _fmt(want_ip.interface_key))
-            )
-        elif have_ip.interface_key != want_ip.interface_key:
-            changes.append(
-                Change(
-                    ObjectType.IP_ADDRESS,
-                    addr,
-                    Action.UPDATE,
-                    "assigned_to",
-                    _fmt(have_ip.interface_key),
-                    _fmt(want_ip.interface_key),
-                )
-            )
-        else:
-            changes.append(Change(ObjectType.IP_ADDRESS, addr, Action.UNCHANGED))
-    owned_prefixes = tuple(f"{k}/" for k in desired.devices)
-    changes.extend(
-        Change(ObjectType.IP_ADDRESS, a, Action.STALE, "assigned_to", _fmt(ip.interface_key))
-        for a, ip in sorted(actual.ips.items())
-        if a not in desired.ips and ip.interface_key and ip.interface_key.startswith(owned_prefixes)
-    )
+    # Cables: NetBox allows one cable per interface, so a desired cable whose end is
+    # held by another (stale) cable is BLOCKED until that cable is retired.
+    occupied = {end: key for key, cab in actual.cables.items() for end in cab.ends}
+    for c in _compare(
+        ObjectType.CABLE,
+        desired.cables,
+        actual.cables,
+        lambda cab: any(device_key_of(e).split("/", 1)[0] in scope_sites for e in cab.ends),
+        lambda k, _: group_of(ObjectType.CABLE, k),
+    ):
+        conflicts = (
+            sorted({occupied[e] for e in desired.cables[c.key].ends if e in occupied})
+            if (c.action == Action.CREATE)
+            else []
+        )
+        blocked = Change(c.object_type, c.key, Action.BLOCKED, "conflicts_with", "; ".join(conflicts), group=c.group)
+        changes.append(blocked if conflicts else c)
     return Plan(tuple(changes))
 
 
-def is_flagged(device: DeviceState, stale_status: str, stale_tag: str) -> bool:
+def is_flagged(device: DeviceState, stale_status: str) -> bool:
     """True when a stale device already carries the stale marker."""
-    return device.status == stale_status and stale_tag in device.tags
+    return device.status == stale_status and device.recon_state == STALE
